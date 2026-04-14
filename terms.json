@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "lastSynced": "2026-04-14T10:30:00Z",
+  "lastSynced": "2026-04-14T11:11:24+00:00",
   "source": "Notion DB: Terminology (https://www.notion.so/940438d6b6b24518b12871b28fb8715e)",
   "categories": [
     "Disease & Anatomy",
@@ -4947,6 +4947,571 @@
       "nuclexId": "",
       "nuclexName": "",
       "nuclexStatus": "Not in NucLex",
+      "notionUrl": ""
+    },
+    {
+      "term": "NucLex",
+      "def": "The Nuclear Medicine Lexicon — a formal, community-driven ontology for nuclear medicine maintained by the SNMMI AI Task Force. Provides standardized, computable vocabulary for procedures, radiopharmaceuticals, imaging equipment, dosimetry, and quantitative analysis. Nucs AI follows NucLex terminology standards.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "Nuclear Medicine Lexicon",
+        "NucLex ontology",
+        "SNMMI ontology"
+      ],
+      "nuclexStatus": "Nucs-Only",
+      "relatedTerms": [
+        "SNMMI",
+        "Standardized reporting",
+        "Attenuation correction",
+        "Radiation dosimetry"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Precision medicine",
+      "def": "An approach to healthcare that tailors prevention, diagnosis, and treatment to individual patient characteristics — including imaging, genomics, and clinical data. Nucs AI's long-term vision: a Precision Medicine Engine.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "precision oncology",
+        "personalized medicine",
+        "individualized medicine"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Precision Medicine Engine",
+        "Theranostics",
+        "Genomics",
+        "Liquid biomarkers",
+        "Predictive biomarker",
+        "Treatment Scenario Analysis"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Ligand",
+      "def": "The targeting molecule in a radiopharmaceutical that binds to a specific receptor or antigen on tumor cells (e.g., PSMA-617 is the ligand in Pluvicto). Determines which cells the radiotracer reaches.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "targeting molecule",
+        "binding molecule",
+        "receptor ligand"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Radioisotope",
+        "PSMA",
+        "177Lu-PSMA-617",
+        "Theranostics",
+        "Radiopharmaceutical biodistribution"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Radioisotope",
+      "def": "An unstable atomic isotope that emits radiation as it decays. The radioactive component of every radiopharmaceutical (e.g., Lu-177, Ga-68, F-18, Ac-225).",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "radionuclide",
+        "radioactive isotope",
+        "isotope"
+      ],
+      "nuclexId": "NID000107",
+      "nuclexName": "radioisotope",
+      "nuclexStatus": "Aligned",
+      "relatedTerms": [
+        "Ligand",
+        "Alpha emitter",
+        "Beta emitter",
+        "Tc-99m",
+        "I-131",
+        "Y-90"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "notionUrl": ""
+    },
+    {
+      "term": "PFS (Progression-Free Survival)",
+      "def": "Time from treatment start to disease progression or death — a primary or key secondary endpoint in oncology trials. Broader than PSA-PFS (which measures PSA progression only).",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "progression-free survival",
+        "PFS",
+        "time to progression"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "PSA-PFS",
+        "Overall survival (OS)",
+        "ORR (Objective Response Rate)",
+        "DCR (Disease Control Rate)",
+        "Hazard ratio"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "ORR (Objective Response Rate)",
+      "def": "Proportion of patients whose tumor shrinks or disappears after treatment. Measured using RECIST criteria on imaging. A key efficacy endpoint.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "objective response rate",
+        "response rate",
+        "ORR"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "DCR (Disease Control Rate)",
+        "CMR (Complete Metabolic Response)",
+        "RECIST 1.1",
+        "PFS (Progression-Free Survival)"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "DCR (Disease Control Rate)",
+      "def": "Proportion of patients with complete response, partial response, or stable disease. Captures the broader benefit of treatment beyond tumor shrinkage alone.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "disease control rate",
+        "clinical benefit rate"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "ORR (Objective Response Rate)",
+        "PFS (Progression-Free Survival)",
+        "Overall survival (OS)"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "CMR (Complete Metabolic Response)",
+      "def": "Complete disappearance of metabolically active disease on PET imaging after treatment. The best possible imaging response outcome.",
+      "category": "Response Assessment",
+      "synonyms": [
+        "complete metabolic response",
+        "complete response",
+        "CR"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "PERCIST",
+        "RECIP 1.0",
+        "Deauville five-point scale",
+        "TrackPSMA",
+        "ORR (Objective Response Rate)"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "QoL (Quality of Life)",
+      "def": "Patient-reported outcome measuring overall well-being, functional status, and treatment burden. Increasingly important as an endpoint in oncology trials alongside survival metrics.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "quality of life",
+        "patient-reported outcome",
+        "PRO",
+        "QoL"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Overall survival (OS)",
+        "PFS (Progression-Free Survival)",
+        "Functional status"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Treatment Scenario Analysis",
+      "def": "Nucs AI's future capability to model multiple treatment pathways for a patient — combining imaging, clinical, and molecular data to predict outcomes for each scenario.",
+      "category": "Nucs AI Products",
+      "synonyms": [
+        "treatment modeling",
+        "scenario modeling",
+        "outcome prediction"
+      ],
+      "nuclexStatus": "Nucs-Only",
+      "relatedTerms": [
+        "Precision Medicine Engine",
+        "SelectPSMA",
+        "Predictive biomarker",
+        "Care continuum"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Precision Medicine Engine",
+      "def": "Nucs AI's long-term platform vision — combining diagnostics, prediction, monitoring, and treatment planning into a unified engine that integrates imaging with clinical data, omics, and liquid biomarkers.",
+      "category": "Nucs AI Products",
+      "synonyms": [
+        "PME",
+        "Nucs AI engine",
+        "integrated platform"
+      ],
+      "nuclexStatus": "Nucs-Only",
+      "relatedTerms": [
+        "DeepPSMA",
+        "SelectPSMA",
+        "TrackPSMA",
+        "Treatment Scenario Analysis",
+        "Precision medicine",
+        "Genomics",
+        "Liquid biomarkers"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Feature-driven modeling",
+      "def": "Nucs AI's AI approach — models grounded in biology and scientific understanding rather than data volume alone. Enables accurate generalization across tracers and therapies even with limited data.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "biology-driven AI",
+        "scientific modeling",
+        "feature engineering"
+      ],
+      "nuclexStatus": "Nucs-Only",
+      "relatedTerms": [
+        "End-to-end deep learning",
+        "DeepPSMA",
+        "SelectPSMA",
+        "Precision Medicine Engine"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SAMI (SelectPSMA AstraZeneca Model Initiative)",
+      "def": "Joint project with AstraZeneca transforming SelectPSMA from Lutetium-treatment prediction to Actinium-treatment prediction. Versions: SAMI (Phase 1&2 data), SAMIv2 (3rd line), SAMIv3 (1st & 2nd line).",
+      "category": "Nucs AI Products",
+      "synonyms": [
+        "SAMI",
+        "SelectPSMA SAMI",
+        "AZ SAMI project",
+        "SAMIv2",
+        "SAMIv3"
+      ],
+      "nuclexStatus": "Nucs-Only",
+      "relatedTerms": [
+        "SelectPSMA",
+        "AstraZeneca",
+        "225Ac-PSMA",
+        "Targeted alpha therapy (TAT)",
+        "177Lu-PSMA-617"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Care continuum",
+      "def": "The full spectrum of a patient's cancer journey — from initial diagnosis through staging, treatment selection, therapy, response monitoring, and long-term follow-up.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "patient journey",
+        "continuum of care",
+        "treatment pathway"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Prostate cancer (PCa)",
+        "TNM",
+        "DeepPSMA",
+        "SelectPSMA",
+        "TrackPSMA"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Germline mutation",
+      "def": "A genetic change inherited from parents and present in every cell. Relevant to cancer risk assessment (e.g., BRCA mutations in prostate cancer).",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "inherited mutation",
+        "hereditary mutation",
+        "germline variant"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Somatic mutation",
+        "Genomics",
+        "Predictive biomarker"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Somatic mutation",
+      "def": "A genetic change acquired during a person's lifetime, present only in tumor cells. Drives cancer growth and can be targeted by precision therapies.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "acquired mutation",
+        "tumor mutation",
+        "somatic variant"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Germline mutation",
+        "Genomics",
+        "Precision medicine",
+        "ctDNA"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Transcriptomics",
+      "def": "Study of RNA transcripts produced by the genome — revealing which genes are actively expressed. A future data layer in Nucs AI's multimodal vision.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "RNA analysis",
+        "gene expression profiling",
+        "transcriptomic data"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Genomics",
+        "Proteomics",
+        "Metabolomics",
+        "Liquid biomarkers"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Metabolomics",
+      "def": "Study of small-molecule metabolites in cells and tissues — providing a snapshot of cellular activity. A future complementary data layer to imaging.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "metabolite profiling",
+        "metabolomic analysis"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Genomics",
+        "Proteomics",
+        "Transcriptomics",
+        "Liquid biomarkers"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "De-identification",
+      "def": "The process of removing or obscuring patient identifiers (name, DOB, MRN) from medical data to enable research use while protecting privacy. Required for all Nucs AI data transfers.",
+      "category": "Regulatory",
+      "synonyms": [
+        "anonymization",
+        "data anonymization",
+        "PHI removal"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "HIPAA",
+        "GDPR",
+        "Alpha site",
+        "IRB"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Market access",
+      "def": "The process of gaining regulatory clearance, reimbursement, and commercial availability for a medical product. Encompasses FDA approval, CPT coding, payer contracts, and distribution.",
+      "category": "Business & Market",
+      "synonyms": [
+        "commercialization",
+        "go-to-market",
+        "regulatory clearance path"
+      ],
+      "nuclexStatus": "Nucs-Only",
+      "relatedTerms": [
+        "FDA 510(k)",
+        "CPT code",
+        "Payer",
+        "Companion Diagnostic (CDx)"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Histopathology",
+      "def": "Microscopic examination of tissue samples (biopsies) to diagnose disease. Serves as ground truth for validating AI imaging analysis (e.g., DeepPSMA's FDA study uses histopathology data).",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "pathology",
+        "tissue analysis",
+        "biopsy pathology",
+        "histology"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Clinical validation",
+        "CADe",
+        "CADx",
+        "DeepPSMA",
+        "Cohort"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Standardized reporting",
+      "def": "Using consistent, structured frameworks for clinical imaging reports. Reduces variability between readers and institutions. ReportPSMA's core mission.",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "structured reporting",
+        "reporting framework"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "ReportPSMA",
+        "Inter-reader variability",
+        "Reporting time",
+        "NucLex",
+        "Misclassification"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Misclassification",
+      "def": "Incorrect disease staging or categorization due to reader variability or inconsistent analysis. A core problem Nucs AI solves — DeepPSMA reduces misclassification through automated, reproducible analysis.",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "staging error",
+        "classification error",
+        "diagnostic error"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Inter-reader variability",
+        "TNM",
+        "miTNM staging",
+        "DeepPSMA",
+        "Standardized reporting"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Functional status",
+      "def": "A patient's overall physical ability and performance level — assessed using scales like ECOG. Informs treatment eligibility and prognosis as part of clinical phenotype.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "performance status",
+        "ECOG status",
+        "Karnofsky score"
+      ],
+      "nuclexStatus": "Not in NucLex",
+      "relatedTerms": [
+        "Clinical phenotype",
+        "QoL (Quality of Life)",
+        "mCRPC",
+        "Care continuum"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "nuclexId": "",
+      "nuclexName": "",
       "notionUrl": ""
     }
   ],
