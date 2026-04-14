@@ -420,7 +420,17 @@ function linkifyTerms(text, excludeTerm) {
 
   var safe = escapeHtml(text);
   var lower = safe.toLowerCase();
-  var excludeLower = excludeTerm ? excludeTerm.toLowerCase() : '';
+
+  // Build set of all phrases to exclude (term name + all its synonyms)
+  var excludeSet = {};
+  if (excludeTerm) {
+    excludeSet[excludeTerm.toLowerCase()] = true;
+    // Find the term object and exclude its synonyms too
+    var excludeObj = termsBySlug[slugify(excludeTerm)];
+    if (excludeObj && excludeObj.synonyms) {
+      excludeObj.synonyms.forEach(function(s) { excludeSet[s.toLowerCase().trim()] = true; });
+    }
+  }
   var result = [];
   var i = 0;
   var matched = []; // Track positions already matched to avoid overlaps
@@ -430,8 +440,12 @@ function linkifyTerms(text, excludeTerm) {
   for (var p = 0; p < termPhrases.length; p++) {
     var phrase = termPhrases[p];
     var phraseLower = phrase.toLowerCase();
-    // Skip the term's own name to avoid self-linking
-    if (phraseLower === excludeLower) continue;
+    // Skip the term's own name and synonyms to avoid self-linking
+    if (excludeSet[phraseLower]) continue;
+    // Also skip if this phrase resolves to the same term we're rendering
+    var phraseTermSlug = slugify(termPhrases._map[phrase].term);
+    var excludeSlug = excludeTerm ? slugify(excludeTerm) : '';
+    if (phraseTermSlug === excludeSlug) continue;
     var searchFrom = 0;
     while (true) {
       var idx = lower.indexOf(phraseLower, searchFrom);
