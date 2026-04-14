@@ -35,7 +35,7 @@
   }
 
   /* ---------- Header ---------- */
-  .header { border-bottom: 1px solid var(--border); background: #fff; padding: 28px 48px 20px; }
+  .header { border-bottom: 1px solid var(--border); background: #fff; padding: 24px 48px 20px; }
   .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
   .logo-wrap { display: flex; align-items: center; gap: 16px; }
   .logo { height: 36px; width: auto; }
@@ -45,21 +45,22 @@
   .stat .count { color: var(--teal); font-weight: 500; }
 
   /* ---------- Search ---------- */
-  .search-section { background: var(--bg-soft); border-bottom: 1px solid var(--border); padding: 28px 48px; position: sticky; top: 0; z-index: 10; }
+  .search-section { background: var(--teal); border-bottom: none; padding: 24px 48px; position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 12px rgba(6,105,121,0.15); }
   .search-inner { max-width: 1200px; margin: 0 auto; position: relative; }
   .search-input {
-    width: 100%; padding: 16px 20px 16px 52px;
+    width: 100%; padding: 14px 20px 14px 52px;
     font-family: inherit; font-size: 16px; font-weight: 400;
-    border: 1px solid var(--border); border-radius: 10px;
+    border: none; border-radius: 12px;
     background: #fff; color: var(--dark);
-    transition: border-color 0.15s, box-shadow 0.15s; outline: none;
+    transition: box-shadow 0.15s; outline: none;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   }
-  .search-input:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(6, 105, 121, 0.12); }
+  .search-input:focus { box-shadow: 0 0 0 3px rgba(255,255,255,0.35), 0 1px 4px rgba(0,0,0,0.08); }
   .search-input::placeholder { color: #9ca3af; font-weight: 350; }
-  .search-icon { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
-  .search-clear { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); background: transparent; border: none; color: var(--muted); cursor: pointer; padding: 6px 10px; font-size: 12px; font-family: inherit; border-radius: 6px; display: none; }
+  .search-icon { position: absolute; left: 18px; top: 0; bottom: 0; display: flex; align-items: center; color: var(--muted); pointer-events: none; }
+  .search-clear { position: absolute; right: 14px; top: 0; bottom: 0; display: none; align-items: center; background: transparent; border: none; color: var(--muted); cursor: pointer; padding: 6px 10px; font-size: 12px; font-family: inherit; border-radius: 6px; }
   .search-clear:hover { background: var(--border); color: var(--dark); }
-  .search-hint { margin-top: 10px; font-size: 12px; color: var(--muted); font-weight: 350; }
+  .search-hint { margin-top: 10px; font-size: 12px; color: rgba(255,255,255,0.55); font-weight: 350; }
 
   /* ---------- Super-tabs ---------- */
   .super-tabs-wrap { border-bottom: 1px solid var(--border); background: #fff; padding: 16px 48px 0; }
@@ -90,13 +91,16 @@
   .section-sub { font-size: 14px; color: var(--muted); margin: 0 0 28px; }
 
   /* ---------- Term grid (list view) ---------- */
-  .term-grid { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .term-grid { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
   .term-row {
     display: grid; grid-template-columns: 240px 1fr; gap: 32px;
     padding: 20px 24px; background: #fff; align-items: start;
     cursor: pointer; transition: background 0.12s;
   }
   .term-row:hover { background: var(--bg-soft); }
+  .term-row::after { content: '\203A'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: var(--border); font-size: 22px; font-weight: 300; transition: color 0.12s; }
+  .term-row:hover::after { color: var(--teal); }
+  .term-row { position: relative; }
   .term-row.with-badge { grid-template-columns: 240px 1fr 160px; }
   .term-name { font-weight: 500; color: var(--teal); font-size: 15px; line-height: 1.5; }
   .term-def { font-size: 14.5px; line-height: 1.6; color: var(--dark); font-weight: 350; }
@@ -796,7 +800,7 @@ var searchTimer = null;
 
 searchEl.addEventListener('input', function(e) {
   var q = e.target.value.trim();
-  searchClearEl.style.display = q ? 'block' : 'none';
+  searchClearEl.style.display = q ? 'flex' : 'none';
   clearTimeout(searchTimer);
   searchTimer = setTimeout(function() {
     if (q.length === 0) {
