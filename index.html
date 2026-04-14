@@ -195,6 +195,29 @@
   }
   .notion-link:hover { color: var(--teal); }
 
+  /* ---------- Term auto-links + tooltip ---------- */
+  .term-link {
+    color: var(--teal); text-decoration: none;
+    border-bottom: 1px dashed rgba(6,105,121,0.35);
+    cursor: pointer; transition: border-color 0.12s;
+  }
+  .term-link:hover { border-bottom-color: var(--teal); }
+
+  .glossary-tooltip {
+    position: fixed; z-index: 100; max-width: 360px;
+    background: #fff; border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.06);
+    pointer-events: none; opacity: 0;
+    transition: opacity 0.12s;
+    font-size: 13px; line-height: 1.6; color: var(--dark); font-weight: 350;
+  }
+  .glossary-tooltip.visible { opacity: 1; pointer-events: auto; }
+  .glossary-tooltip .tt-term { font-weight: 500; color: var(--teal); font-size: 14px; margin-bottom: 4px; }
+  .glossary-tooltip .tt-cat { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+  .glossary-tooltip .tt-def { font-size: 13px; color: var(--dark); }
+  .glossary-tooltip .tt-cta { font-size: 11px; color: var(--teal); margin-top: 8px; }
+
   /* ---------- Empty / loader ---------- */
   .empty { padding: 60px 24px; text-align: center; color: var(--muted); font-size: 15px; }
   .empty .empty-title { color: var(--dark); font-weight: 500; }
@@ -283,6 +306,13 @@
   </div>
 </main>
 
+<div class="glossary-tooltip" id="tooltip">
+  <div class="tt-term"></div>
+  <div class="tt-cat"></div>
+  <div class="tt-def"></div>
+  <div class="tt-cta">Click to view full entry</div>
+</div>
+
 <footer class="footer">
   Nucs AI · Internal Reference · Edits made in <a href="https://www.notion.so/940438d6b6b24518b12871b28fb8715e" target="_blank">Notion</a> ·
   <span id="lastSynced"></span>
@@ -355,6 +385,149 @@ function buildHighlightRegex(query) {
   var escaped = tokens.map(function(t) { return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
   return new RegExp('(' + escaped.join('|') + ')', 'gi');
 }
+
+// ============================================================
+// TERM AUTO-LINKING + TOOLTIP
+// ============================================================
+var tooltipEl = document.getElementById('tooltip');
+var tooltipTimeout = null;
+var termPhrases = []; // Sorted longest-first for greedy matching
+
+function buildTermPhrases() {
+  // Build sorted list of term names + key synonyms for matching
+  var phrases = {};
+  TERMS.forEach(function(t) {
+    // Add the main term name
+    phrases[t.term.toLowerCase()] = t;
+    // Add short synonyms/abbreviations (skip long descriptive ones)
+    if (t.synonyms) {
+      t.synonyms.forEach(function(s) {
+        var sl = s.toLowerCase().trim();
+        if (sl.length >= 2 && sl.length <= 30) {
+          phrases[sl] = t;
+        }
+      });
+    }
+  });
+  // Sort longest first so "PET/CT" matches before "PET"
+  termPhrases = Object.keys(phrases).sort(function(a, b) { return b.length - a.length; });
+  termPhrases._map = phrases;
+}
+
+function linkifyTerms(text, excludeTerm) {
+  // Returns HTML with glossary terms wrapped in clickable spans
+  if (!termPhrases.length || !text) return escapeHtml(text);
+
+  var safe = escapeHtml(text);
+  var lower = safe.toLowerCase();
+  var excludeLower = excludeTerm ? excludeTerm.toLowerCase() : '';
+  var result = [];
+  var i = 0;
+  var matched = []; // Track positions already matched to avoid overlaps
+
+  // Build a list of all matches with positions
+  var allMatches = [];
+  for (var p = 0; p < termPhrases.length; p++) {
+    var phrase = termPhrases[p];
+    var phraseLower = phrase.toLowerCase();
+    // Skip the term's own name to avoid self-linking
+    if (phraseLower === excludeLower) continue;
+    var searchFrom = 0;
+    while (true) {
+      var idx = lower.indexOf(phraseLower, searchFrom);
+      if (idx === -1) break;
+      // Check word boundaries (don't match inside longer words)
+      var before = idx > 0 ? lower.charAt(idx - 1) : ' ';
+      var after = idx + phrase.length < lower.length ? lower.charAt(idx + phrase.length) : ' ';
+      var wordBoundary = /[^a-z0-9]/.test(before) && /[^a-z0-9]/.test(after);
+      if (wordBoundary) {
+        allMatches.push({ start: idx, end: idx + phrase.length, phrase: phrase });
+      }
+      searchFrom = idx + 1;
+    }
+  }
+
+  // Sort by position, then longest first for overlaps
+  allMatches.sort(function(a, b) { return a.start - b.start || (b.end - b.start) - (a.end - a.start); });
+
+  // Remove overlapping matches (keep first/longest at each position)
+  var filtered = [];
+  var lastEnd = 0;
+  for (var m = 0; m < allMatches.length; m++) {
+    if (allMatches[m].start >= lastEnd) {
+      filtered.push(allMatches[m]);
+      lastEnd = allMatches[m].end;
+    }
+  }
+
+  // Build result HTML
+  var pos = 0;
+  for (var f = 0; f < filtered.length; f++) {
+    var match = filtered[f];
+    // Add text before this match
+    if (match.start > pos) {
+      result.push(safe.substring(pos, match.start));
+    }
+    // Add the linked term
+    var t = termPhrases._map[match.phrase];
+    var slug = slugify(t.term);
+    var originalText = safe.substring(match.start, match.end);
+    result.push('<span class="term-link" data-term-slug="' + escapeHtml(slug) + '">' + originalText + '</span>');
+    pos = match.end;
+  }
+  // Add remaining text
+  if (pos < safe.length) {
+    result.push(safe.substring(pos));
+  }
+
+  return result.join('');
+}
+
+function showTooltip(slug, anchorEl) {
+  var t = termsBySlug[slug];
+  if (!t) return;
+  tooltipEl.querySelector('.tt-term').textContent = t.term;
+  tooltipEl.querySelector('.tt-cat').textContent = t.category;
+  tooltipEl.querySelector('.tt-def').textContent = t.def;
+  tooltipEl.classList.add('visible');
+
+  // Position near the anchor
+  var rect = anchorEl.getBoundingClientRect();
+  var ttW = 360;
+  var left = rect.left;
+  var top = rect.bottom + 8;
+  // Keep within viewport
+  if (left + ttW > window.innerWidth - 16) left = window.innerWidth - ttW - 16;
+  if (left < 16) left = 16;
+  if (top + 200 > window.innerHeight) top = rect.top - 8 - tooltipEl.offsetHeight;
+  tooltipEl.style.left = left + 'px';
+  tooltipEl.style.top = top + 'px';
+}
+
+function hideTooltip() {
+  tooltipEl.classList.remove('visible');
+}
+
+function bindTermLinks(container) {
+  container.querySelectorAll('.term-link[data-term-slug]').forEach(function(el) {
+    el.addEventListener('mouseenter', function() {
+      clearTimeout(tooltipTimeout);
+      showTooltip(this.getAttribute('data-term-slug'), this);
+    });
+    el.addEventListener('mouseleave', function() {
+      tooltipTimeout = setTimeout(hideTooltip, 150);
+    });
+    el.addEventListener('click', function(e) {
+      e.stopPropagation();
+      hideTooltip();
+      navigateToTerm(this.getAttribute('data-term-slug'));
+    });
+  });
+}
+
+// Keep tooltip alive when hovering over it
+tooltipEl.addEventListener('mouseenter', function() { clearTimeout(tooltipTimeout); });
+tooltipEl.addEventListener('mouseleave', function() { tooltipTimeout = setTimeout(hideTooltip, 150); });
 
 function highlight(text, re) {
   var safe = escapeHtml(text);
@@ -437,6 +610,7 @@ async function load() {
     });
 
     searchEl.disabled = false;
+    buildTermPhrases();
 
     // Set initial state from hash or defaults
     var hashTerm = readHashTerm();
@@ -628,12 +802,13 @@ function renderCategory() {
       items.map(function(t) {
         return '<div class="term-row" data-slug="' + escapeHtml(slugify(t.term)) + '">' +
           '<div class="term-name">' + escapeHtml(t.term) + '</div>' +
-          '<div class="term-def">' + escapeHtml(t.def) + '</div>' +
+          '<div class="term-def">' + linkifyTerms(t.def, t.term) + '</div>' +
         '</div>';
       }).join('') +
     '</div>';
 
   bindTermRowClicks();
+  bindTermLinks(contentEl);
 }
 
 // ============================================================
@@ -674,7 +849,7 @@ function renderAZ() {
       var slug = slugify(t.term);
       html += '<div class="term-row" data-slug="' + escapeHtml(slug) + '">' +
         '<div class="term-name">' + escapeHtml(t.term) + '</div>' +
-        '<div class="term-def">' + escapeHtml(t.def) + '</div>' +
+        '<div class="term-def">' + linkifyTerms(t.def, t.term) + '</div>' +
         '</div>';
     });
     html += '</div></div>';
@@ -685,7 +860,8 @@ function renderAZ() {
     '<p class="section-sub">' + TERMS.length + ' terms</p>' +
     html;
 
-  // Bind clicks
+  // Bind clicks and term links
+  bindTermLinks(contentEl);
   contentEl.querySelectorAll('.term-row[data-slug]').forEach(function(row) {
     row.addEventListener('click', function() {
       navigateToTerm(this.getAttribute('data-slug'));
@@ -792,7 +968,7 @@ function renderDetail(t) {
   html += '</div>';
 
   // Definition
-  html += '<div class="detail-def">' + escapeHtml(t.def) + '</div>';
+  html += '<div class="detail-def">' + linkifyTerms(t.def, t.term) + '</div>';
 
   // Products ("Used in")
   if (t.products && t.products.length > 0) {
@@ -809,7 +985,7 @@ function renderDetail(t) {
   if (t.internalNotes) {
     html += '<div class="detail-section">';
     html += '<div class="detail-section-title">Internal Notes</div>';
-    html += '<div class="detail-notes">' + escapeHtml(t.internalNotes) + '</div>';
+    html += '<div class="detail-notes">' + linkifyTerms(t.internalNotes, t.term) + '</div>';
     html += '</div>';
   }
 
@@ -867,6 +1043,9 @@ function renderDetail(t) {
       navigateToTerm(slug);
     });
   });
+
+  // Bind inline term links in definition and notes
+  bindTermLinks(contentEl);
 
   // Scroll to top
   window.scrollTo({ top: 0 });
