@@ -50,7 +50,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -76,7 +76,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -103,7 +103,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -129,7 +129,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -156,7 +156,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -183,7 +183,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -209,7 +209,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -235,7 +235,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -261,7 +261,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -285,7 +285,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -309,9 +309,9 @@
         "WB-PET",
         "mpMRI"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000225",
+      "nuclexName": "PET scanner",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -334,9 +334,9 @@
         "WB-PET",
         "mpMRI"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000382",
+      "nuclexName": "CT-measured attenuation correction",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -361,7 +361,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -384,9 +384,9 @@
         "PET/MRI",
         "SSRT PET/CT"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000226",
+      "nuclexName": "SPECT scanner",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -412,9 +412,9 @@
         "MRI",
         "PET"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000228",
+      "nuclexName": "PET/CT scanner",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -437,9 +437,9 @@
         "WB-PET",
         "mpMRI"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000229",
+      "nuclexName": "PET/MR scanner",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -464,7 +464,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -488,9 +488,9 @@
         "SUVpeak",
         "Spatial resolution"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000207",
+      "nuclexName": "standardized uptake value",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -513,9 +513,9 @@
         "TLG",
         "Whole-body tumor burden"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000185",
+      "nuclexName": "maximum standardized uptake value",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -538,9 +538,9 @@
         "TLG",
         "Whole-body tumor burden"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000184",
+      "nuclexName": "mean standardized uptake value",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -562,9 +562,9 @@
         "TLG",
         "Whole-body tumor burden"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000186",
+      "nuclexName": "peak standardized uptake value",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -587,9 +587,9 @@
         "TLG",
         "Whole-body tumor burden"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000177",
+      "nuclexName": "metabolic tumor volume",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -613,9 +613,9 @@
         "SUVpeak",
         "Whole-body tumor burden"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000179",
+      "nuclexName": "total lesion glycolysis",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -640,9 +640,9 @@
         "SUVmax",
         "SUVmean"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000176",
+      "nuclexName": "volume-based measurement",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -668,9 +668,9 @@
         "RLT",
         "Theranostics"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000059",
+      "nuclexName": "Ga-68 prostate-specific membrane antigen-11",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -696,9 +696,9 @@
         "RLT",
         "Theranostics"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000048",
+      "nuclexName": "F-18 dcfpyl",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -722,9 +722,9 @@
         "RLT",
         "Theranostics"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000056",
+      "nuclexName": "F-18 prostate-specific membrane antigen-1007",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -748,9 +748,9 @@
         "RLT",
         "Theranostics"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000070",
+      "nuclexName": "F-18 rhpsma-7.3",
+      "nuclexStatus": "Aligned",
       "notionUrl": ""
     },
     {
@@ -773,9 +773,9 @@
         "Ga-68 DOTATOC",
         "Tc-99m"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000050",
+      "nuclexName": "F-18 fluorodeoxyglucose",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -800,9 +800,9 @@
         "Alpha emitter",
         "Beta emitter"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000011",
+      "nuclexName": "theranostics",
+      "nuclexStatus": "Aligned",
       "notionUrl": ""
     },
     {
@@ -826,9 +826,9 @@
         "Alpha emitter",
         "Androgen deprivation therapy (ADT)"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000002",
+      "nuclexName": "radiopharmaceutical therapy",
+      "nuclexStatus": "Aligned",
       "notionUrl": ""
     },
     {
@@ -850,9 +850,9 @@
         "Targeted alpha therapy (TAT)",
         "Theranostics"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000002",
+      "nuclexName": "radiopharmaceutical therapy",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -878,9 +878,9 @@
         "Beta emitter",
         "Companion Diagnostic (CDx)"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000087",
+      "nuclexName": "Lu-177 prostate-specific membrane antigen-617",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -905,9 +905,9 @@
         "RPT",
         "Ra-223 (Xofigo)"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000088",
+      "nuclexName": "Ac-225 PSMA",
+      "nuclexStatus": "Aligned",
       "notionUrl": ""
     },
     {
@@ -931,9 +931,9 @@
         "Targeted alpha therapy (TAT)",
         "Tb-149"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000099",
+      "nuclexName": "beta-emitting radiopharmaceutical",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -957,9 +957,9 @@
         "Targeted alpha therapy (TAT)",
         "Tb-149"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000138",
+      "nuclexName": "alpha particle",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -984,7 +984,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1007,7 +1007,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1031,7 +1031,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1055,7 +1055,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1080,7 +1080,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1104,7 +1104,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1127,7 +1127,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1152,7 +1152,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1177,9 +1177,9 @@
         "PSMA-VOL",
         "Reporting time"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000158",
+      "nuclexName": "segmentation method",
+      "nuclexStatus": "Aligned",
       "notionUrl": ""
     },
     {
@@ -1203,9 +1203,9 @@
         "Reporting time",
         "Segmentation"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000167",
+      "nuclexName": "automatic segmentation",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -1229,7 +1229,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1254,7 +1254,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1280,7 +1280,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1307,7 +1307,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1334,7 +1334,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1360,7 +1360,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1386,7 +1386,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1412,7 +1412,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1435,7 +1435,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1458,7 +1458,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1481,7 +1481,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1506,7 +1506,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1535,7 +1535,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1561,7 +1561,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1587,7 +1587,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1613,7 +1613,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1635,7 +1635,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1662,7 +1662,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1687,7 +1687,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1712,7 +1712,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1734,7 +1734,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1754,7 +1754,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1778,7 +1778,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1804,7 +1804,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1826,7 +1826,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -1849,7 +1849,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1871,7 +1871,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1893,7 +1893,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1915,7 +1915,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1937,7 +1937,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1960,7 +1960,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -1981,7 +1981,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2004,7 +2004,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2028,7 +2028,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2051,7 +2051,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2075,7 +2075,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2099,7 +2099,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2123,7 +2123,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2147,7 +2147,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2171,7 +2171,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2195,7 +2195,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2218,7 +2218,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2242,7 +2242,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2266,7 +2266,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2290,7 +2290,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2309,7 +2309,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2328,7 +2328,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2347,7 +2347,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2367,7 +2367,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2387,7 +2387,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2407,7 +2407,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2427,7 +2427,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2448,7 +2448,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2469,7 +2469,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2490,7 +2490,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2511,7 +2511,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2532,7 +2532,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2555,7 +2555,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2580,7 +2580,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2603,7 +2603,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2626,7 +2626,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2650,7 +2650,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2673,7 +2673,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2697,7 +2697,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2722,7 +2722,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2746,7 +2746,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2770,7 +2770,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2793,7 +2793,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2816,7 +2816,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2840,7 +2840,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2864,7 +2864,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -2891,7 +2891,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -2913,7 +2913,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -2936,7 +2936,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -2959,7 +2959,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -2986,7 +2986,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3011,7 +3011,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3032,7 +3032,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3055,7 +3055,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3077,7 +3077,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3100,7 +3100,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3127,7 +3127,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3154,7 +3154,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3181,7 +3181,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3204,7 +3204,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3227,7 +3227,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3251,7 +3251,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3277,7 +3277,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3304,7 +3304,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3328,7 +3328,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3352,7 +3352,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3376,7 +3376,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3401,7 +3401,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3426,7 +3426,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3450,7 +3450,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3474,7 +3474,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3498,7 +3498,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3522,7 +3522,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3547,7 +3547,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3574,7 +3574,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3601,7 +3601,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3626,7 +3626,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3648,7 +3648,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3670,7 +3670,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -3697,7 +3697,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3722,7 +3722,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3747,7 +3747,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3771,7 +3771,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3794,7 +3794,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3815,9 +3815,9 @@
         "Targeted alpha therapy (TAT)",
         "Tb-149"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000118",
+      "nuclexName": "Pb-212",
+      "nuclexStatus": "Aligned",
       "notionUrl": ""
     },
     {
@@ -3840,7 +3840,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3864,7 +3864,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3891,7 +3891,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3914,7 +3914,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3941,7 +3941,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3965,7 +3965,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -3988,7 +3988,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -4012,7 +4012,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -4035,9 +4035,9 @@
         "Ga-68 DOTATOC",
         "Tc-99m"
       ],
-      "nuclexId": "",
-      "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexId": "NID000073",
+      "nuclexName": "Ga-68 fibroblast activation protein inhibitor",
+      "nuclexStatus": "Differs",
       "notionUrl": ""
     },
     {
@@ -4063,7 +4063,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     },
     {
@@ -4086,7 +4086,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4108,7 +4108,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4129,7 +4129,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4151,7 +4151,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4173,7 +4173,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4197,7 +4197,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4221,7 +4221,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4243,7 +4243,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4265,7 +4265,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4289,7 +4289,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4311,7 +4311,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4335,7 +4335,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Nucs-Only",
       "notionUrl": ""
     },
     {
@@ -4946,7 +4946,7 @@
       ],
       "nuclexId": "",
       "nuclexName": "",
-      "nuclexStatus": "",
+      "nuclexStatus": "Not in NucLex",
       "notionUrl": ""
     }
   ],
