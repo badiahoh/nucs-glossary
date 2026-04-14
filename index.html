@@ -34,6 +34,7 @@
     -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
   }
 
+  /* ---------- Header ---------- */
   .header { border-bottom: 1px solid var(--border); background: #fff; padding: 28px 48px 20px; }
   .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
   .logo-wrap { display: flex; align-items: center; gap: 16px; }
@@ -41,8 +42,9 @@
   .title-block h1 { margin: 0; font-weight: 500; font-size: 22px; color: var(--dark); letter-spacing: -0.01em; }
   .title-block .sub { font-size: 13px; color: var(--muted); font-weight: 350; margin-top: 2px; }
   .stat { font-size: 13px; color: var(--muted); font-weight: 400; }
-  .stat strong { color: var(--teal); font-weight: 600; }
+  .stat .count { color: var(--teal); font-weight: 500; }
 
+  /* ---------- Search ---------- */
   .search-section { background: var(--bg-soft); border-bottom: 1px solid var(--border); padding: 28px 48px; position: sticky; top: 0; z-index: 10; }
   .search-inner { max-width: 1200px; margin: 0 auto; position: relative; }
   .search-input {
@@ -59,44 +61,143 @@
   .search-clear:hover { background: var(--border); color: var(--dark); }
   .search-hint { margin-top: 10px; font-size: 12px; color: var(--muted); font-weight: 350; }
 
-  .tabs-wrap { border-bottom: 1px solid var(--border); background: #fff; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .tabs { max-width: 1200px; margin: 0 auto; padding: 0 48px; display: flex; gap: 4px; white-space: nowrap; }
-  .tab { padding: 16px 18px 14px; background: transparent; border: none; border-bottom: 2px solid transparent; font-family: inherit; font-size: 14px; font-weight: 400; color: var(--muted); cursor: pointer; transition: color 0.15s, border-color 0.15s; white-space: nowrap; }
-  .tab:hover { color: var(--dark); }
-  .tab.active { color: var(--teal); border-bottom-color: var(--teal); font-weight: 500; }
+  /* ---------- Super-tabs ---------- */
+  .super-tabs-wrap { border-bottom: 1px solid var(--border); background: #fff; padding: 16px 48px 0; }
+  .super-tabs { max-width: 1200px; margin: 0 auto; display: flex; gap: 8px; flex-wrap: wrap; padding-bottom: 16px; }
+  .super-tab {
+    padding: 8px 20px; background: transparent; border: 1.5px solid var(--border);
+    border-radius: 999px; font-family: inherit; font-size: 14px; font-weight: 400;
+    color: var(--muted); cursor: pointer; transition: all 0.15s; white-space: nowrap;
+  }
+  .super-tab:hover { border-color: var(--teal); color: var(--teal); }
+  .super-tab.active { background: var(--teal); border-color: var(--teal); color: #fff; font-weight: 500; }
 
+  /* ---------- Sub-tabs ---------- */
+  .sub-tabs-wrap { border-bottom: 1px solid var(--border); background: #fff; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .sub-tabs { max-width: 1200px; margin: 0 auto; padding: 0 48px; display: flex; gap: 4px; white-space: nowrap; }
+  .sub-tab {
+    padding: 16px 18px 14px; background: transparent; border: none;
+    border-bottom: 2px solid transparent; font-family: inherit; font-size: 14px;
+    font-weight: 400; color: var(--muted); cursor: pointer;
+    transition: color 0.15s, border-color 0.15s; white-space: nowrap;
+  }
+  .sub-tab:hover { color: var(--dark); }
+  .sub-tab.active { color: var(--teal); border-bottom-color: var(--teal); font-weight: 500; }
+
+  /* ---------- Content ---------- */
   .content { max-width: 1200px; margin: 0 auto; padding: 40px 48px 80px; }
   .section-heading { font-size: 28px; font-weight: 500; color: var(--dark); margin: 0 0 8px; letter-spacing: -0.01em; }
   .section-sub { font-size: 14px; color: var(--muted); margin: 0 0 28px; }
 
+  /* ---------- Term grid (list view) ---------- */
   .term-grid { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-  .term-row { display: grid; grid-template-columns: 240px 1fr; gap: 32px; padding: 20px 24px; background: #fff; align-items: start; }
+  .term-row {
+    display: grid; grid-template-columns: 240px 1fr; gap: 32px;
+    padding: 20px 24px; background: #fff; align-items: start;
+    cursor: pointer; transition: background 0.12s;
+  }
+  .term-row:hover { background: var(--bg-soft); }
   .term-row.with-badge { grid-template-columns: 240px 1fr 160px; }
   .term-name { font-weight: 500; color: var(--teal); font-size: 15px; line-height: 1.5; }
   .term-def { font-size: 14.5px; line-height: 1.6; color: var(--dark); font-weight: 350; }
   .badge { justify-self: end; padding: 4px 10px; background: var(--teal-soft); color: var(--teal); font-size: 11px; font-weight: 500; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
 
+  /* ---------- Detail view ---------- */
+  .detail-view { animation: fadeIn 0.15s ease; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .detail-back {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 14px; color: var(--teal); font-weight: 400;
+    cursor: pointer; background: none; border: none; font-family: inherit;
+    padding: 0; margin-bottom: 28px; transition: opacity 0.15s;
+  }
+  .detail-back:hover { opacity: 0.7; }
+  .detail-back svg { flex-shrink: 0; }
+
+  .detail-term { font-size: 32px; font-weight: 500; color: var(--teal); margin: 0 0 12px; letter-spacing: -0.01em; }
+  .detail-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; align-items: center; }
+
+  .badge-nuclex { padding: 4px 10px; font-size: 11px; font-weight: 500; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
+  .badge-nuclex.aligned { background: #dcfce7; color: #166534; }
+  .badge-nuclex.differs { background: #fef9c3; color: #854d0e; }
+  .badge-nuclex.not-in-nuclex { background: #f3f4f6; color: #6b7280; }
+  .badge-nuclex.nucs-only { background: #dbeafe; color: #1e40af; }
+
+  .nuclex-name { font-size: 12px; color: var(--muted); font-weight: 350; margin-left: 4px; }
+
+  .detail-def { font-size: 16px; line-height: 1.7; color: var(--dark); font-weight: 350; margin-bottom: 32px; }
+
+  .detail-section { margin-bottom: 28px; }
+  .detail-section-title { font-size: 13px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 12px; }
+
+  /* Product pills */
+  .product-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .product-pill {
+    padding: 5px 14px; border: 1.5px solid var(--teal); border-radius: 999px;
+    font-size: 13px; font-weight: 400; color: var(--teal); background: transparent;
+  }
+
+  /* Internal notes */
+  .detail-notes { font-size: 14.5px; line-height: 1.7; color: var(--dark); font-weight: 350; background: var(--bg-soft); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border); }
+
+  /* Links */
+  .detail-links { display: flex; flex-direction: column; gap: 2px; }
+  .detail-link {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 16px; border-radius: 8px;
+    font-size: 14px; color: var(--teal); font-weight: 400;
+    text-decoration: none; transition: background 0.12s;
+  }
+  .detail-link:hover { background: var(--teal-soft); }
+  .detail-link svg { flex-shrink: 0; color: var(--muted); }
+
+  /* Related terms pills */
+  .related-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .related-pill {
+    padding: 5px 14px; background: var(--teal-soft); border-radius: 999px;
+    font-size: 13px; font-weight: 400; color: var(--teal);
+    cursor: pointer; border: none; font-family: inherit; transition: background 0.12s;
+  }
+  .related-pill:hover { background: #d0e6ea; }
+
+  /* Edit in Notion */
+  .notion-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--muted); font-weight: 400;
+    text-decoration: none; margin-top: 8px; transition: color 0.15s;
+  }
+  .notion-link:hover { color: var(--teal); }
+
+  /* ---------- Empty / loader ---------- */
   .empty { padding: 60px 24px; text-align: center; color: var(--muted); font-size: 15px; }
-  .empty strong { color: var(--dark); font-weight: 500; }
-
-  .footer { border-top: 1px solid var(--border); padding: 24px 48px; text-align: center; font-size: 12px; color: var(--muted); }
-  .footer a { color: var(--teal); text-decoration: none; font-weight: 400; }
-
-  mark { background: rgba(6, 105, 121, 0.15); color: var(--teal); padding: 0 2px; border-radius: 2px; font-weight: 500; }
+  .empty .empty-title { color: var(--dark); font-weight: 500; }
 
   .loader { padding: 80px 24px; text-align: center; color: var(--muted); font-size: 14px; }
   .loader-spinner { display: inline-block; width: 24px; height: 24px; border: 2px solid var(--border); border-top-color: var(--teal); border-radius: 50%; animation: spin 0.7s linear infinite; margin-bottom: 12px; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
+  /* ---------- Footer ---------- */
+  .footer { border-top: 1px solid var(--border); padding: 24px 48px; text-align: center; font-size: 12px; color: var(--muted); }
+  .footer a { color: var(--teal); text-decoration: none; font-weight: 400; }
+
+  /* ---------- Highlight ---------- */
+  mark { background: rgba(6, 105, 121, 0.15); color: var(--teal); padding: 0 2px; border-radius: 2px; font-weight: 500; }
+
+  /* ---------- Mobile ---------- */
   @media (max-width: 768px) {
     .header, .search-section, .content { padding-left: 20px; padding-right: 20px; }
-    .tabs { padding: 0 20px; }
+    .super-tabs-wrap { padding-left: 20px; padding-right: 20px; }
+    .sub-tabs { padding: 0 20px; }
     .footer { padding-left: 20px; padding-right: 20px; }
     .term-row { grid-template-columns: 1fr; gap: 6px; padding: 16px 18px; }
     .term-row.with-badge { grid-template-columns: 1fr; }
     .badge { justify-self: start; margin-top: 6px; }
     .header-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
     .section-heading { font-size: 22px; }
+    .detail-term { font-size: 24px; }
+    .super-tabs { gap: 6px; }
+    .super-tab { padding: 7px 14px; font-size: 13px; }
   }
 </style>
 </head>
@@ -111,7 +212,7 @@
         <div class="sub">A reference glossary for nuclear medicine, theranostics, and Nucs AI</div>
       </div>
     </div>
-    <div class="stat"><strong id="termCount">—</strong> terms</div>
+    <div class="stat"><span class="count" id="termCount">&mdash;</span> terms</div>
   </div>
 </header>
 
@@ -127,14 +228,18 @@
   </div>
 </section>
 
-<nav class="tabs-wrap">
-  <div class="tabs" id="tabs"></div>
+<nav class="super-tabs-wrap" id="superTabsWrap">
+  <div class="super-tabs" id="superTabs"></div>
+</nav>
+
+<nav class="sub-tabs-wrap" id="subTabsWrap">
+  <div class="sub-tabs" id="subTabs"></div>
 </nav>
 
 <main class="content" id="content">
   <div class="loader">
     <div class="loader-spinner"></div>
-    <div>Loading terms…</div>
+    <div>Loading terms...</div>
   </div>
 </main>
 
@@ -147,170 +252,602 @@
 // ============================================================
 // CONFIGURATION
 // ============================================================
-// To change the data source URL, edit only this constant.
-// To change where this page lives, just move the entire repo —
-// terms.json and assets/ are loaded relative to this HTML file.
-const CONFIG = {
+var CONFIG = {
   TERMS_URL: 'terms.json',
-  SEARCH_THRESHOLD: 0.4 // 0 = exact, 1 = match anything
+  SEARCH_THRESHOLD: 0.4
+};
+
+// Default super-category mapping (used when JSON lacks superCategories)
+var DEFAULT_SUPER_CATEGORIES = {
+  'Clinical': [
+    'Disease & Anatomy', 'Biomarkers & Lab', 'Clinical Metrics & Endpoints',
+    'Imaging Modalities', 'Quantitative Imaging Metrics', 'Diagnostic Radiotracers',
+    'Therapy & Theranostics', 'Response Assessment', 'Reading & Workflow'
+  ],
+  'Products & Platform': ['Nucs AI Products', 'Platform & Technology'],
+  'Research & Regulatory': ['Clinical Trials', 'Study Design & Evidence', 'Regulatory', 'QMS Documentation'],
+  'Industry & Business': ['Competitors / Industry', 'Stakeholders & PR', 'Business & Market', 'Conferences', 'Journals']
 };
 
 // ============================================================
-// APP
+// STATE
 // ============================================================
-let TERMS = [];
-let CATEGORIES = [];
-let activeCategory = null;
-let fuse = null;
+var TERMS = [];
+var CATEGORIES = [];
+var SUPER_CATEGORIES = {};
+var SUPER_CATEGORY_ORDER = [];
+var activeSuperCategory = null;
+var activeCategory = null;
+var activeTermSlug = null;
+var fuse = null;
+var termsBySlug = {};
 
-const tabsEl = document.getElementById('tabs');
-const contentEl = document.getElementById('content');
-const searchEl = document.getElementById('search');
-const searchClearEl = document.getElementById('searchClear');
-const termCountEl = document.getElementById('termCount');
-const lastSyncedEl = document.getElementById('lastSynced');
+// ============================================================
+// DOM REFS
+// ============================================================
+var superTabsEl = document.getElementById('superTabs');
+var superTabsWrapEl = document.getElementById('superTabsWrap');
+var subTabsEl = document.getElementById('subTabs');
+var subTabsWrapEl = document.getElementById('subTabsWrap');
+var contentEl = document.getElementById('content');
+var searchEl = document.getElementById('search');
+var searchClearEl = document.getElementById('searchClear');
+var termCountEl = document.getElementById('termCount');
+var lastSyncedEl = document.getElementById('lastSynced');
 
-async function load() {
-  try {
-    const res = await fetch(CONFIG.TERMS_URL + '?t=' + Date.now(), { cache: 'no-cache' });
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-    TERMS = data.terms || [];
-    CATEGORIES = data.categories && data.categories.length ? data.categories : [...new Set(TERMS.map(t => t.category))];
-    activeCategory = CATEGORIES[0];
-    termCountEl.textContent = TERMS.length;
-    if (data.lastSynced) {
-      const d = new Date(data.lastSynced);
-      lastSyncedEl.textContent = 'Last synced ' + d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-    }
-    fuse = new Fuse(TERMS, {
-      keys: [
-        { name: 'term', weight: 0.5 },
-        { name: 'synonyms', weight: 0.3 },
-        { name: 'def', weight: 0.2 }
-      ],
-      threshold: CONFIG.SEARCH_THRESHOLD,
-      ignoreLocation: true, includeScore: true, minMatchCharLength: 2
-    });
-    searchEl.disabled = false;
-    renderTabs();
-    renderCategory();
-  } catch (err) {
-    contentEl.innerHTML = `
-      <div class="empty">
-        <strong>Couldn't load terms</strong>
-        <div style="margin-top:8px;font-size:13px;">${err.message}. Check that <code>${CONFIG.TERMS_URL}</code> is reachable.</div>
-      </div>`;
-  }
-}
-
-function renderTabs() {
-  tabsEl.innerHTML = '';
-  CATEGORIES.forEach(cat => {
-    const btn = document.createElement('button');
-    btn.className = 'tab' + (cat === activeCategory ? ' active' : '');
-    btn.textContent = cat;
-    btn.addEventListener('click', () => {
-      activeCategory = cat;
-      searchEl.value = '';
-      searchClearEl.style.display = 'none';
-      renderTabs();
-      renderCategory();
-    });
-    tabsEl.appendChild(btn);
-  });
-}
-
-function renderCategory() {
-  const items = TERMS.filter(t => t.category === activeCategory);
-  contentEl.innerHTML = `
-    <h2 class="section-heading">${escapeHtml(activeCategory)}</h2>
-    <p class="section-sub">${items.length} term${items.length === 1 ? '' : 's'}</p>
-    <div class="term-grid">
-      ${items.map(t => `
-        <div class="term-row">
-          <div class="term-name">${escapeHtml(t.term)}</div>
-          <div class="term-def">${escapeHtml(t.def)}</div>
-        </div>
-      `).join('')}
-    </div>`;
-}
-
-function renderSearch(query) {
-  const results = fuse.search(query);
-  if (results.length === 0) {
-    contentEl.innerHTML = `
-      <div class="empty">
-        <strong>No matches for "${escapeHtml(query)}"</strong>
-        <div style="margin-top:8px;font-size:13px;">Try a different spelling, related word, or browse by category above.</div>
-      </div>`;
-    return;
-  }
-  const re = buildHighlightRegex(query);
-  contentEl.innerHTML = `
-    <h2 class="section-heading">Search results</h2>
-    <p class="section-sub">${results.length} match${results.length === 1 ? '' : 'es'} for "${escapeHtml(query)}"</p>
-    <div class="term-grid">
-      ${results.map(r => {
-        const t = r.item;
-        return `
-          <div class="term-row with-badge">
-            <div class="term-name">${highlight(t.term, re)}</div>
-            <div class="term-def">${highlight(t.def, re)}</div>
-            <span class="badge">${escapeHtml(t.category)}</span>
-          </div>`;
-      }).join('')}
-    </div>`;
-  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
-}
-
+// ============================================================
+// UTILITIES
+// ============================================================
 function escapeHtml(str) {
+  if (str == null) return '';
   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
 }
+
+function slugify(str) {
+  return String(str).toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 function buildHighlightRegex(query) {
-  const tokens = query.trim().split(/\s+/).filter(t => t.length >= 2);
+  var tokens = query.trim().split(/\s+/).filter(function(t) { return t.length >= 2; });
   if (tokens.length === 0) return null;
-  const escaped = tokens.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  var escaped = tokens.map(function(t) { return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
   return new RegExp('(' + escaped.join('|') + ')', 'gi');
 }
+
 function highlight(text, re) {
-  const safe = escapeHtml(text);
+  var safe = escapeHtml(text);
   if (!re) return safe;
   return safe.replace(re, '<mark>$1</mark>');
 }
 
-let searchTimer = null;
-searchEl.addEventListener('input', (e) => {
-  const q = e.target.value.trim();
+function findTermBySlug(slug) {
+  return termsBySlug[slug] || null;
+}
+
+function findTermByName(name) {
+  for (var i = 0; i < TERMS.length; i++) {
+    if (TERMS[i].term === name) return TERMS[i];
+  }
+  return null;
+}
+
+function findCategoryForTerm(termObj) {
+  if (!termObj) return null;
+  return termObj.category || null;
+}
+
+function findSuperCategoryForCategory(cat) {
+  for (var i = 0; i < SUPER_CATEGORY_ORDER.length; i++) {
+    var sc = SUPER_CATEGORY_ORDER[i];
+    var cats = SUPER_CATEGORIES[sc];
+    if (cats && cats.indexOf(cat) !== -1) return sc;
+  }
+  return SUPER_CATEGORY_ORDER[0] || null;
+}
+
+// ============================================================
+// DATA LOADING
+// ============================================================
+async function load() {
+  try {
+    var res = await fetch(CONFIG.TERMS_URL + '?t=' + Date.now(), { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    var data = await res.json();
+
+    TERMS = data.terms || [];
+    CATEGORIES = data.categories && data.categories.length
+      ? data.categories
+      : Array.from(new Set(TERMS.map(function(t) { return t.category; })));
+
+    // Resolve super-categories
+    if (data.superCategories && typeof data.superCategories === 'object' && Object.keys(data.superCategories).length > 0) {
+      SUPER_CATEGORIES = data.superCategories;
+      SUPER_CATEGORY_ORDER = Object.keys(data.superCategories);
+    } else {
+      SUPER_CATEGORIES = deriveSuperCategories(CATEGORIES);
+      SUPER_CATEGORY_ORDER = Object.keys(DEFAULT_SUPER_CATEGORIES);
+    }
+
+    // Build slug index
+    termsBySlug = {};
+    TERMS.forEach(function(t) {
+      termsBySlug[slugify(t.term)] = t;
+    });
+
+    termCountEl.textContent = TERMS.length;
+
+    if (data.lastSynced) {
+      var d = new Date(data.lastSynced);
+      lastSyncedEl.textContent = 'Last synced ' + d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+    }
+
+    fuse = new Fuse(TERMS, {
+      keys: [
+        { name: 'term', weight: 0.4 },
+        { name: 'synonyms', weight: 0.25 },
+        { name: 'def', weight: 0.2 },
+        { name: 'internalNotes', weight: 0.15 }
+      ],
+      threshold: CONFIG.SEARCH_THRESHOLD,
+      ignoreLocation: true,
+      includeScore: true,
+      minMatchCharLength: 2
+    });
+
+    searchEl.disabled = false;
+
+    // Set initial state from hash or defaults
+    var hashTerm = readHashTerm();
+    if (hashTerm) {
+      var found = findTermBySlug(hashTerm);
+      if (found) {
+        var cat = findCategoryForTerm(found);
+        var sc = findSuperCategoryForCategory(cat);
+        activeSuperCategory = sc;
+        activeCategory = cat;
+        activeTermSlug = hashTerm;
+        renderSuperTabs();
+        renderSubTabs();
+        renderDetail(found);
+        return;
+      }
+    }
+
+    // Default: first super-category, first sub-category
+    activeSuperCategory = SUPER_CATEGORY_ORDER[0];
+    var firstCats = getActiveCategoriesFiltered();
+    activeCategory = firstCats.length > 0 ? firstCats[0] : CATEGORIES[0];
+    renderSuperTabs();
+    renderSubTabs();
+    renderCategory();
+  } catch (err) {
+    contentEl.innerHTML =
+      '<div class="empty">' +
+        '<div class="empty-title">Couldn\'t load terms</div>' +
+        '<div style="margin-top:8px;font-size:13px;">' + escapeHtml(err.message) + '. Check that <code>' + escapeHtml(CONFIG.TERMS_URL) + '</code> is reachable.</div>' +
+      '</div>';
+  }
+}
+
+function deriveSuperCategories(categories) {
+  // Map each category to a super-category using the default mapping
+  // Any category not in the default mapping goes into the first super-category that has space
+  var result = {};
+  var keys = Object.keys(DEFAULT_SUPER_CATEGORIES);
+  keys.forEach(function(k) { result[k] = []; });
+
+  categories.forEach(function(cat) {
+    var placed = false;
+    for (var i = 0; i < keys.length; i++) {
+      if (DEFAULT_SUPER_CATEGORIES[keys[i]].indexOf(cat) !== -1) {
+        result[keys[i]].push(cat);
+        placed = true;
+        break;
+      }
+    }
+    if (!placed) {
+      // Put unrecognized categories in the first super-category
+      result[keys[0]].push(cat);
+    }
+  });
+
+  // Remove empty super-categories
+  keys.forEach(function(k) {
+    if (result[k].length === 0) delete result[k];
+  });
+
+  return result;
+}
+
+function getActiveCategoriesFiltered() {
+  if (!activeSuperCategory || !SUPER_CATEGORIES[activeSuperCategory]) return [];
+  return SUPER_CATEGORIES[activeSuperCategory].filter(function(cat) {
+    return CATEGORIES.indexOf(cat) !== -1;
+  });
+}
+
+// ============================================================
+// HASH ROUTING
+// ============================================================
+function readHashTerm() {
+  var h = window.location.hash;
+  if (!h || h.length < 2) return null;
+  return h.substring(1);
+}
+
+function setHash(slug) {
+  if (slug) {
+    history.pushState(null, '', '#' + slug);
+  } else {
+    history.pushState(null, '', window.location.pathname + window.location.search);
+  }
+}
+
+window.addEventListener('popstate', function() {
+  var hashTerm = readHashTerm();
+  if (hashTerm) {
+    var found = findTermBySlug(hashTerm);
+    if (found) {
+      var cat = findCategoryForTerm(found);
+      var sc = findSuperCategoryForCategory(cat);
+      activeSuperCategory = sc;
+      activeCategory = cat;
+      activeTermSlug = hashTerm;
+      renderSuperTabs();
+      renderSubTabs();
+      renderDetail(found);
+      return;
+    }
+  }
+  // No valid hash — go back to list
+  activeTermSlug = null;
+  renderSuperTabs();
+  renderSubTabs();
+  renderCategory();
+});
+
+// ============================================================
+// RENDERING: SUPER-TABS
+// ============================================================
+function renderSuperTabs() {
+  superTabsEl.innerHTML = '';
+  SUPER_CATEGORY_ORDER.forEach(function(sc) {
+    if (!SUPER_CATEGORIES[sc] || SUPER_CATEGORIES[sc].length === 0) return;
+    // Only show if at least one sub-category has terms
+    var hasCats = SUPER_CATEGORIES[sc].some(function(cat) { return CATEGORIES.indexOf(cat) !== -1; });
+    if (!hasCats) return;
+
+    var btn = document.createElement('button');
+    btn.className = 'super-tab' + (sc === activeSuperCategory ? ' active' : '');
+    btn.textContent = sc;
+    btn.addEventListener('click', function() {
+      activeSuperCategory = sc;
+      var cats = getActiveCategoriesFiltered();
+      activeCategory = cats.length > 0 ? cats[0] : null;
+      activeTermSlug = null;
+      searchEl.value = '';
+      searchClearEl.style.display = 'none';
+      setHash(null);
+      renderSuperTabs();
+      renderSubTabs();
+      renderCategory();
+    });
+    superTabsEl.appendChild(btn);
+  });
+}
+
+// ============================================================
+// RENDERING: SUB-TABS
+// ============================================================
+function renderSubTabs() {
+  subTabsEl.innerHTML = '';
+  var cats = getActiveCategoriesFiltered();
+  if (cats.length === 0) {
+    subTabsWrapEl.style.display = 'none';
+    return;
+  }
+  subTabsWrapEl.style.display = '';
+
+  cats.forEach(function(cat) {
+    var btn = document.createElement('button');
+    btn.className = 'sub-tab' + (cat === activeCategory ? ' active' : '');
+    btn.textContent = cat;
+    btn.addEventListener('click', function() {
+      activeCategory = cat;
+      activeTermSlug = null;
+      searchEl.value = '';
+      searchClearEl.style.display = 'none';
+      setHash(null);
+      renderSubTabs();
+      renderCategory();
+    });
+    subTabsEl.appendChild(btn);
+  });
+}
+
+// ============================================================
+// RENDERING: CATEGORY LIST
+// ============================================================
+function renderCategory() {
+  superTabsWrapEl.style.display = '';
+  subTabsWrapEl.style.display = '';
+
+  if (!activeCategory) {
+    contentEl.innerHTML = '<div class="empty"><div class="empty-title">No categories available</div></div>';
+    return;
+  }
+
+  var items = TERMS.filter(function(t) { return t.category === activeCategory; });
+
+  contentEl.innerHTML =
+    '<h2 class="section-heading">' + escapeHtml(activeCategory) + '</h2>' +
+    '<p class="section-sub">' + items.length + ' term' + (items.length === 1 ? '' : 's') + '</p>' +
+    '<div class="term-grid">' +
+      items.map(function(t) {
+        return '<div class="term-row" data-slug="' + escapeHtml(slugify(t.term)) + '">' +
+          '<div class="term-name">' + escapeHtml(t.term) + '</div>' +
+          '<div class="term-def">' + escapeHtml(t.def) + '</div>' +
+        '</div>';
+      }).join('') +
+    '</div>';
+
+  bindTermRowClicks();
+}
+
+// ============================================================
+// RENDERING: SEARCH RESULTS
+// ============================================================
+function renderSearch(query) {
+  var results = fuse.search(query);
+  if (results.length === 0) {
+    contentEl.innerHTML =
+      '<div class="empty">' +
+        '<div class="empty-title">No matches for "' + escapeHtml(query) + '"</div>' +
+        '<div style="margin-top:8px;font-size:13px;">Try a different spelling, related word, or browse by category above.</div>' +
+      '</div>';
+    return;
+  }
+
+  var re = buildHighlightRegex(query);
+  contentEl.innerHTML =
+    '<h2 class="section-heading">Search results</h2>' +
+    '<p class="section-sub">' + results.length + ' match' + (results.length === 1 ? '' : 'es') + ' for "' + escapeHtml(query) + '"</p>' +
+    '<div class="term-grid">' +
+      results.map(function(r) {
+        var t = r.item;
+        return '<div class="term-row with-badge" data-slug="' + escapeHtml(slugify(t.term)) + '">' +
+          '<div class="term-name">' + highlight(t.term, re) + '</div>' +
+          '<div class="term-def">' + highlight(t.def, re) + '</div>' +
+          '<span class="badge">' + escapeHtml(t.category) + '</span>' +
+        '</div>';
+      }).join('') +
+    '</div>';
+
+  // Remove active state from tabs
+  document.querySelectorAll('.super-tab').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('.sub-tab').forEach(function(b) { b.classList.remove('active'); });
+
+  bindTermRowClicks();
+}
+
+// ============================================================
+// RENDERING: TERM DETAIL
+// ============================================================
+function renderDetail(t) {
+  superTabsWrapEl.style.display = 'none';
+  subTabsWrapEl.style.display = 'none';
+
+  var catName = t.category || 'Unknown';
+  var html = '<div class="detail-view">';
+
+  // Back link
+  html += '<button class="detail-back" id="detailBack">' +
+    '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>' +
+    'Back to ' + escapeHtml(catName) +
+  '</button>';
+
+  // Term name
+  html += '<h2 class="detail-term">' + escapeHtml(t.term) + '</h2>';
+
+  // Meta: category badge + nuclex badge
+  html += '<div class="detail-meta">';
+  html += '<span class="badge">' + escapeHtml(catName) + '</span>';
+
+  if (t.nuclexStatus) {
+    var nClass = '';
+    var nLabel = '';
+    switch (t.nuclexStatus) {
+      case 'Aligned': nClass = 'aligned'; nLabel = 'NucLex Aligned'; break;
+      case 'Differs': nClass = 'differs'; nLabel = 'NucLex Differs'; break;
+      case 'Not in NucLex': nClass = 'not-in-nuclex'; nLabel = 'Not in NucLex'; break;
+      case 'Nucs-Only': nClass = 'nucs-only'; nLabel = 'Nucs-Only'; break;
+      default: nClass = 'not-in-nuclex'; nLabel = escapeHtml(t.nuclexStatus); break;
+    }
+    html += '<span class="badge-nuclex ' + nClass + '">' + nLabel + '</span>';
+
+    if (t.nuclexName && t.nuclexName !== t.term.toLowerCase() && t.nuclexName !== t.term) {
+      html += '<span class="nuclex-name">NucLex: ' + escapeHtml(t.nuclexName) + '</span>';
+    }
+  }
+  html += '</div>';
+
+  // Definition
+  html += '<div class="detail-def">' + escapeHtml(t.def) + '</div>';
+
+  // Products ("Used in")
+  if (t.products && t.products.length > 0) {
+    html += '<div class="detail-section">';
+    html += '<div class="detail-section-title">Used in</div>';
+    html += '<div class="product-pills">';
+    t.products.forEach(function(p) {
+      html += '<span class="product-pill">' + escapeHtml(p) + '</span>';
+    });
+    html += '</div></div>';
+  }
+
+  // Internal Notes
+  if (t.internalNotes) {
+    html += '<div class="detail-section">';
+    html += '<div class="detail-section-title">Internal Notes</div>';
+    html += '<div class="detail-notes">' + escapeHtml(t.internalNotes) + '</div>';
+    html += '</div>';
+  }
+
+  // Links & Resources
+  if (t.links && t.links.length > 0) {
+    html += '<div class="detail-section">';
+    html += '<div class="detail-section-title">Links &amp; Resources</div>';
+    html += '<div class="detail-links">';
+    t.links.forEach(function(link) {
+      html += '<a class="detail-link" href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener">' +
+        '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>' +
+        escapeHtml(link.label) +
+      '</a>';
+    });
+    html += '</div></div>';
+  }
+
+  // Related Terms
+  if (t.relatedTerms && t.relatedTerms.length > 0) {
+    html += '<div class="detail-section">';
+    html += '<div class="detail-section-title">Related Terms</div>';
+    html += '<div class="related-pills">';
+    t.relatedTerms.forEach(function(rt) {
+      var rtSlug = slugify(rt);
+      var exists = !!termsBySlug[rtSlug];
+      if (exists) {
+        html += '<button class="related-pill" data-slug="' + escapeHtml(rtSlug) + '">' + escapeHtml(rt) + '</button>';
+      } else {
+        html += '<span class="related-pill" style="cursor:default;opacity:0.6;">' + escapeHtml(rt) + '</span>';
+      }
+    });
+    html += '</div></div>';
+  }
+
+  // Edit in Notion
+  if (t.notionUrl) {
+    html += '<a class="notion-link" href="' + escapeHtml(t.notionUrl) + '" target="_blank" rel="noopener">' +
+      '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>' +
+      'Edit in Notion' +
+    '</a>';
+  }
+
+  html += '</div>';
+  contentEl.innerHTML = html;
+
+  // Bind back button
+  document.getElementById('detailBack').addEventListener('click', function() {
+    navigateBackToList();
+  });
+
+  // Bind related term pills
+  contentEl.querySelectorAll('.related-pill[data-slug]').forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      var slug = this.getAttribute('data-slug');
+      navigateToTerm(slug);
+    });
+  });
+
+  // Scroll to top
+  window.scrollTo({ top: 0 });
+}
+
+// ============================================================
+// NAVIGATION
+// ============================================================
+function navigateToTerm(slug) {
+  var t = findTermBySlug(slug);
+  if (!t) return;
+
+  var cat = findCategoryForTerm(t);
+  var sc = findSuperCategoryForCategory(cat);
+  activeSuperCategory = sc;
+  activeCategory = cat;
+  activeTermSlug = slug;
+  setHash(slug);
+  renderSuperTabs();
+  renderSubTabs();
+  renderDetail(t);
+}
+
+function navigateBackToList() {
+  activeTermSlug = null;
+  setHash(null);
+  renderSuperTabs();
+  renderSubTabs();
+  renderCategory();
+}
+
+function bindTermRowClicks() {
+  contentEl.querySelectorAll('.term-row[data-slug]').forEach(function(row) {
+    row.addEventListener('click', function() {
+      var slug = this.getAttribute('data-slug');
+      navigateToTerm(slug);
+    });
+  });
+}
+
+// ============================================================
+// SEARCH
+// ============================================================
+var searchTimer = null;
+
+searchEl.addEventListener('input', function(e) {
+  var q = e.target.value.trim();
   searchClearEl.style.display = q ? 'block' : 'none';
   clearTimeout(searchTimer);
-  searchTimer = setTimeout(() => {
-    if (q.length === 0) { renderTabs(); renderCategory(); }
-    else if (q.length >= 2) { renderSearch(q); }
+  searchTimer = setTimeout(function() {
+    if (q.length === 0) {
+      activeTermSlug = null;
+      setHash(null);
+      renderSuperTabs();
+      renderSubTabs();
+      renderCategory();
+    } else if (q.length >= 2) {
+      activeTermSlug = null;
+      setHash(null);
+      superTabsWrapEl.style.display = '';
+      subTabsWrapEl.style.display = '';
+      renderSearch(q);
+    }
   }, 120);
 });
 
-searchClearEl.addEventListener('click', () => {
+searchClearEl.addEventListener('click', function() {
   searchEl.value = '';
   searchClearEl.style.display = 'none';
-  renderTabs();
+  activeTermSlug = null;
+  setHash(null);
+  renderSuperTabs();
+  renderSubTabs();
   renderCategory();
   searchEl.focus();
 });
 
-document.addEventListener('keydown', (e) => {
+// ============================================================
+// KEYBOARD SHORTCUTS
+// ============================================================
+document.addEventListener('keydown', function(e) {
   if (e.key === '/' && document.activeElement !== searchEl) {
     e.preventDefault();
     searchEl.focus();
   } else if (e.key === 'Escape' && document.activeElement === searchEl) {
     searchEl.value = '';
     searchClearEl.style.display = 'none';
-    renderTabs();
+    activeTermSlug = null;
+    setHash(null);
+    renderSuperTabs();
+    renderSubTabs();
     renderCategory();
     searchEl.blur();
   }
 });
 
+// ============================================================
+// INIT
+// ============================================================
 load();
 </script>
 

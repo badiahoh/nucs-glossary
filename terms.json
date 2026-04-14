@@ -1,10 +1,11 @@
 {
   "version": "1",
-  "lastSynced": "2026-04-13T13:00:00Z",
+  "lastSynced": "2026-04-14T10:30:00Z",
   "source": "Notion DB: Terminology (https://www.notion.so/940438d6b6b24518b12871b28fb8715e)",
   "categories": [
     "Disease & Anatomy",
     "Biomarkers & Lab",
+    "Clinical Metrics & Endpoints",
     "Imaging Modalities",
     "Quantitative Imaging Metrics",
     "Diagnostic Radiotracers",
@@ -12,123 +13,3563 @@
     "Response Assessment",
     "Reading & Workflow",
     "Nucs AI Products",
+    "Platform & Technology",
     "Clinical Trials",
+    "Study Design & Evidence",
     "Regulatory",
     "QMS Documentation",
+    "Competitors / Industry",
     "Stakeholders & PR",
+    "Business & Market",
     "Conferences",
-    "Journals",
-    "Competitors / Industry"
+    "Journals"
   ],
   "terms": [
-    {"term": "Prostate cancer (PCa)", "def": "Malignancy of the prostate gland; the most common non-skin cancer in men.", "category": "Disease & Anatomy", "synonyms": ["prostate carcinoma", "PCa", "prostate tumor", "prostate tumour"]},
-    {"term": "Localized PCa", "def": "Prostate cancer confined to the prostate, with no detectable spread.", "category": "Disease & Anatomy", "synonyms": ["organ-confined", "early stage prostate cancer"]},
-    {"term": "Biochemical recurrence (BCR)", "def": "Rising PSA after definitive therapy without imaging-detectable disease.", "category": "Disease & Anatomy", "synonyms": ["BCR", "PSA relapse", "rising PSA"]},
-    {"term": "mHSPC", "def": "Metastatic Hormone-Sensitive Prostate Cancer — disease that still responds to androgen deprivation.", "category": "Disease & Anatomy", "synonyms": ["hormone sensitive", "metastatic hormone sensitive prostate cancer"]},
-    {"term": "mCRPC", "def": "Metastatic Castration-Resistant Prostate Cancer — progresses despite androgen deprivation therapy.", "category": "Disease & Anatomy", "synonyms": ["castration resistant", "metastatic castrate resistant", "CRPC"]},
-    {"term": "TNM", "def": "Tumor / Node / Metastasis — standard cancer staging system describing primary tumor, lymph node involvement, and distant metastases.", "category": "Disease & Anatomy", "synonyms": ["staging", "tumor node metastasis", "cancer staging"]},
-    {"term": "Oligometastatic", "def": "Limited number of metastases (typically ≤3–5), often considered for targeted local therapy.", "category": "Disease & Anatomy", "synonyms": ["limited metastases", "few metastases"]},
-    {"term": "PSA", "def": "Prostate-Specific Antigen — blood biomarker used to screen, stage, and monitor prostate cancer activity.", "category": "Biomarkers & Lab", "synonyms": ["prostate specific antigen", "blood test prostate"]},
-    {"term": "PSMA", "def": "Prostate-Specific Membrane Antigen — protein highly expressed on prostate cancer cells and the molecular target for PSMA imaging and theranostics.", "category": "Biomarkers & Lab", "synonyms": ["prostate specific membrane antigen", "PSMA target"]},
-    {"term": "AR / AR-V7", "def": "Androgen Receptor and its splice variant AR-V7; AR-V7 is associated with resistance to androgen receptor-targeted therapies.", "category": "Biomarkers & Lab", "synonyms": ["androgen receptor", "AR-V7", "resistance marker"]},
-    {"term": "PET", "def": "Positron Emission Tomography — functional/molecular imaging that detects gamma rays from positron-emitting radiotracers.", "category": "Imaging Modalities", "synonyms": ["positron emission tomography", "molecular imaging", "nuclear imaging"]},
-    {"term": "CT", "def": "Computed Tomography — anatomical X-ray-based cross-sectional imaging.", "category": "Imaging Modalities", "synonyms": ["computed tomography", "CAT scan"]},
-    {"term": "MRI", "def": "Magnetic Resonance Imaging — soft tissue imaging using magnetic fields and radio waves.", "category": "Imaging Modalities", "synonyms": ["magnetic resonance imaging", "MR scan"]},
-    {"term": "SPECT", "def": "Single Photon Emission Computed Tomography — nuclear imaging using gamma-emitting tracers.", "category": "Imaging Modalities", "synonyms": ["single photon emission"]},
-    {"term": "PET/CT", "def": "Hybrid scanner combining functional PET with anatomical CT — the standard modality for PSMA imaging.", "category": "Imaging Modalities", "synonyms": ["PET CT", "hybrid imaging", "PSMA PET", "PSMA scan"]},
-    {"term": "PET/MRI", "def": "Hybrid scanner combining PET with MRI — used in select centers for higher soft-tissue contrast.", "category": "Imaging Modalities", "synonyms": ["PET MRI", "PET MR"]},
-    {"term": "WB-PET", "def": "Whole-Body PET — imaging from skull base to mid-thigh (or eyes-to-thighs) for systemic disease assessment.", "category": "Imaging Modalities", "synonyms": ["whole body PET", "total body PET"]},
-    {"term": "SUV", "def": "Standardized Uptake Value — normalized measure of radiotracer uptake corrected for injected dose and patient weight.", "category": "Quantitative Imaging Metrics", "synonyms": ["standardized uptake value", "uptake measurement"]},
-    {"term": "SUVmax", "def": "Maximum SUV in a lesion (single hottest voxel) — most commonly reported quantitative metric.", "category": "Quantitative Imaging Metrics", "synonyms": ["max SUV", "maximum standardized uptake"]},
-    {"term": "SUVmean", "def": "Mean SUV across a defined region of interest.", "category": "Quantitative Imaging Metrics", "synonyms": ["mean SUV", "average uptake"]},
-    {"term": "SUVpeak", "def": "Mean SUV in a small fixed-size sphere (typically 1 cm³) around the hottest voxel — less noise-sensitive than SUVmax.", "category": "Quantitative Imaging Metrics", "synonyms": ["peak SUV"]},
-    {"term": "MTV", "def": "Metabolic Tumor Volume — total volume of metabolically active tumor.", "category": "Quantitative Imaging Metrics", "synonyms": ["metabolic tumor volume", "tumor volume"]},
-    {"term": "TLG", "def": "Total Lesion Glycolysis (FDG) or Total Lesion Uptake (PSMA analog) — MTV multiplied by SUVmean.", "category": "Quantitative Imaging Metrics", "synonyms": ["total lesion glycolysis", "total lesion uptake", "TLU"]},
-    {"term": "Whole-body tumor burden", "def": "Aggregate volumetric or uptake measure summed across all detected lesions.", "category": "Quantitative Imaging Metrics", "synonyms": ["tumor burden", "disease burden", "total tumor load"]},
-    {"term": "68Ga-PSMA-11", "def": "Gallium-68 labeled PSMA tracer for PET imaging. Brand names include Locametz (Novartis) and Illuccix (Telix).", "category": "Diagnostic Radiotracers", "synonyms": ["gallium PSMA", "Ga-68 PSMA", "Locametz", "Illuccix"]},
-    {"term": "18F-DCFPyL / Piflufolastat", "def": "Pylarify (Lantheus) — FDA-approved fluorine-18 PSMA tracer with longer half-life than Ga-68 variants.", "category": "Diagnostic Radiotracers", "synonyms": ["Pylarify", "piflufolastat", "F-18 PSMA", "DCFPyL"]},
-    {"term": "18F-PSMA-1007", "def": "Fluorine-18 PSMA tracer with delayed renal clearance, useful for pelvic imaging.", "category": "Diagnostic Radiotracers", "synonyms": ["PSMA-1007", "F-18 PSMA 1007"]},
-    {"term": "18F-rhPSMA-7.3", "def": "Posluma (Blue Earth Diagnostics) — FDA-approved fluorine-18 PSMA tracer.", "category": "Diagnostic Radiotracers", "synonyms": ["Posluma", "rhPSMA"]},
-    {"term": "18F-FDG", "def": "Fluorodeoxyglucose — general oncology PET tracer measuring glucose metabolism (not PSMA-specific).", "category": "Diagnostic Radiotracers", "synonyms": ["FDG", "fluorodeoxyglucose", "F-18 FDG"]},
-    {"term": "Theranostics", "def": "Therapy + diagnostics paired pathway: an imaging tracer identifies a molecular target, and a matched therapeutic delivers radiation to that same target.", "category": "Therapy & Theranostics", "synonyms": ["theragnostic", "targeted radionuclide therapy", "see-and-treat"]},
-    {"term": "RLT", "def": "Radioligand Therapy — systemic targeted radiation delivered via a ligand that binds to tumor antigens.", "category": "Therapy & Theranostics", "synonyms": ["radioligand therapy", "radionuclide therapy"]},
-    {"term": "RPT", "def": "Radiopharmaceutical Therapy — broader umbrella term often used interchangeably with RLT.", "category": "Therapy & Theranostics", "synonyms": ["radiopharmaceutical therapy"]},
-    {"term": "177Lu-PSMA-617", "def": "Pluvicto (Novartis) — FDA-approved Lutetium-177 PSMA radioligand therapy for mCRPC.", "category": "Therapy & Theranostics", "synonyms": ["Pluvicto", "Lu-177 PSMA", "lutetium PSMA", "PSMA-617"]},
-    {"term": "225Ac-PSMA", "def": "Actinium-225 PSMA — alpha-emitting radioligand therapy, currently investigational.", "category": "Therapy & Theranostics", "synonyms": ["actinium PSMA", "Ac-225", "alpha therapy"]},
-    {"term": "Beta emitter", "def": "Radionuclide emitting beta particles (e.g., Lu-177) — longer tissue range, lower linear energy transfer (LET).", "category": "Therapy & Theranostics", "synonyms": ["beta particle", "beta radiation"]},
-    {"term": "Alpha emitter", "def": "Radionuclide emitting alpha particles (e.g., Ac-225) — short range, very high LET, more cytotoxic per decay.", "category": "Therapy & Theranostics", "synonyms": ["alpha particle", "alpha radiation"]},
-    {"term": "RECIST 1.1", "def": "Response Evaluation Criteria In Solid Tumors — anatomical (CT/MRI) response framework based on lesion size changes.", "category": "Response Assessment", "synonyms": ["RECIST", "response criteria", "tumor response"]},
-    {"term": "PERCIST", "def": "PET Response Criteria In Solid Tumors — quantitative PET-based response framework using SUL changes.", "category": "Response Assessment", "synonyms": ["PET response", "metabolic response criteria"]},
-    {"term": "PCWG3 / PCWG4", "def": "Prostate Cancer Working Group response criteria; PCWG4 is the latest update incorporating PSMA imaging.", "category": "Response Assessment", "synonyms": ["PCWG", "prostate cancer working group"]},
-    {"term": "RECIP 1.0", "def": "Response Evaluation Criteria In PSMA-PET/CT — emerging PSMA-specific response framework.", "category": "Response Assessment", "synonyms": ["RECIP", "PSMA response criteria"]},
-    {"term": "Lesion-by-lesion tracking", "def": "Following individual lesions across imaging timepoints to characterize response heterogeneity (TrackPSMA's approach).", "category": "Response Assessment", "synonyms": ["lesion tracking", "longitudinal lesion", "per-lesion response"]},
-    {"term": "Inter-reader variability", "def": "Differences in interpretation between different readers (Nucs AI's preferred term over 'subjectivity').", "category": "Reading & Workflow", "synonyms": ["interobserver variability", "reader disagreement"]},
-    {"term": "Intra-reader variability", "def": "The same reader's interpretation differing across separate reads of the same case.", "category": "Reading & Workflow", "synonyms": ["intraobserver variability"]},
-    {"term": "Noise / false positives", "def": "Preferred terms for non-tumor uptake on PSMA imaging (avoid 'benign uptake').", "category": "Reading & Workflow", "synonyms": ["false positive", "background uptake", "non-specific uptake"]},
-    {"term": "Segmentation", "def": "Delineating tumor or organ boundaries on imaging — manual or automated.", "category": "Reading & Workflow", "synonyms": ["contouring", "delineation", "ROI definition"]},
-    {"term": "Auto-segmentation", "def": "AI-automated segmentation of tumors or organs.", "category": "Reading & Workflow", "synonyms": ["automatic segmentation", "AI segmentation"]},
-    {"term": "Reporting time", "def": "Time required for a clinician to complete an imaging report — a key efficiency metric.", "category": "Reading & Workflow", "synonyms": ["read time", "interpretation time"]},
-    {"term": "Whole-body quantification", "def": "Quantitative tumor burden measurement summed across the entire scan.", "category": "Reading & Workflow", "synonyms": ["whole body measurement", "total body quantification"]},
-    {"term": "DeepPSMA", "def": "Nucs AI's tumor detection, TNM staging, and whole-body tumor burden quantification on PSMA PET/CT. Reported metrics: 95% tumor detection, 87% TNM staging, 99% whole-body quantification, 70% reduction in reporting time.", "category": "Nucs AI Products", "synonyms": ["deep PSMA", "Nucs AI detection"]},
-    {"term": "SelectPSMA", "def": "Nucs AI's pre-therapy responder/non-responder identification for PSMA RLT. 94% NPV; multi-center validated in US/EU.", "category": "Nucs AI Products", "synonyms": ["select PSMA", "responder prediction", "RLT selection"]},
-    {"term": "TrackPSMA", "def": "Nucs AI's standardized response assessment with lesion-by-lesion tracking across imaging timepoints.", "category": "Nucs AI Products", "synonyms": ["track PSMA", "response tracking", "Nucs AI tracking"]},
-    {"term": "VISION", "def": "Phase III trial that established efficacy of Lu-177-PSMA-617 in mCRPC and led to Pluvicto's FDA approval.", "category": "Clinical Trials", "synonyms": ["VISION trial", "Pluvicto trial"]},
-    {"term": "TheraP", "def": "Australian randomized trial comparing Lu-177-PSMA-617 vs cabazitaxel in mCRPC.", "category": "Clinical Trials", "synonyms": ["TheraP trial", "Lu-PSMA vs cabazitaxel"]},
-    {"term": "PSMAfore", "def": "Trial of Lu-177-PSMA-617 in pre-chemotherapy mCRPC.", "category": "Clinical Trials", "synonyms": ["PSMAfore trial", "pre-chemo PSMA"]},
-    {"term": "proPSMA", "def": "Australian trial that established PSMA PET/CT superiority over conventional imaging for primary staging.", "category": "Clinical Trials", "synonyms": ["proPSMA trial", "PSMA staging"]},
-    {"term": "PRIMARY / PRIMARY2", "def": "Trials evaluating PSMA PET/CT in primary diagnosis and risk stratification of prostate cancer.", "category": "Clinical Trials", "synonyms": ["PRIMARY trial", "PRIMARY2"]},
-    {"term": "PROSPET-BX", "def": "Study referenced internally regarding PSMA PET use around biopsy decisions.", "category": "Clinical Trials", "synonyms": ["PROSPET", "biopsy PSMA"]},
-    {"term": "SaMD", "def": "Software as a Medical Device — software that performs medical functions without being part of a hardware device.", "category": "Regulatory", "synonyms": ["software medical device"]},
-    {"term": "FDA 510(k)", "def": "FDA premarket notification pathway demonstrating substantial equivalence to a legally marketed predicate device.", "category": "Regulatory", "synonyms": ["510k", "510(k)", "premarket notification", "FDA clearance", "FDA approval"]},
-    {"term": "De Novo", "def": "FDA pathway for novel low-to-moderate-risk devices that lack a predicate.", "category": "Regulatory", "synonyms": ["de novo classification", "FDA de novo"]},
-    {"term": "PMA", "def": "Premarket Approval — most rigorous FDA pathway, required for Class III devices.", "category": "Regulatory", "synonyms": ["premarket approval", "Class III approval"]},
-    {"term": "IDE", "def": "Investigational Device Exemption — FDA mechanism allowing clinical study of an unapproved device.", "category": "Regulatory", "synonyms": ["investigational device", "FDA IDE"]},
-    {"term": "HDE", "def": "Humanitarian Device Exemption — FDA pathway for devices treating rare conditions.", "category": "Regulatory", "synonyms": ["humanitarian device"]},
-    {"term": "21 CFR 820", "def": "FDA Quality System Regulation (QSR) governing medical device manufacturers.", "category": "Regulatory", "synonyms": ["QSR", "21 CFR Part 820", "quality system regulation"]},
-    {"term": "QMSR", "def": "Quality Management System Regulation — FDA's update aligning 21 CFR 820 with ISO 13485 (effective 2026).", "category": "Regulatory", "synonyms": ["quality management system regulation"]},
-    {"term": "ISO 13485", "def": "International quality management system standard for medical device organizations.", "category": "Regulatory", "synonyms": ["medical device QMS standard"]},
-    {"term": "EU MDR 2017/745", "def": "European Medical Device Regulation governing medical devices placed on the EU market.", "category": "Regulatory", "synonyms": ["MDR", "EU MDR", "European medical device regulation"]},
-    {"term": "IVDR", "def": "EU In Vitro Diagnostic Regulation (2017/746) — counterpart to MDR for IVDs.", "category": "Regulatory", "synonyms": ["in vitro diagnostic regulation"]},
-    {"term": "HIPAA", "def": "Health Insurance Portability and Accountability Act — US patient health data privacy law.", "category": "Regulatory", "synonyms": ["health privacy", "patient data privacy US"]},
-    {"term": "GDPR", "def": "General Data Protection Regulation — EU data protection and privacy law.", "category": "Regulatory", "synonyms": ["data protection EU", "general data protection"]},
-    {"term": "IRB", "def": "Institutional Review Board — ethics committee overseeing human subjects research.", "category": "Regulatory", "synonyms": ["ethics board", "ethics committee"]},
-    {"term": "eQMS", "def": "Electronic Quality Management System (Nucs AI uses Greenlight Guru).", "category": "QMS Documentation", "synonyms": ["electronic QMS", "Greenlight Guru"]},
-    {"term": "DHF", "def": "Design History File — compilation of records describing the design history of a finished device.", "category": "QMS Documentation", "synonyms": ["design history file"]},
-    {"term": "DMR", "def": "Device Master Record — documentation defining the procedures and specifications for a finished device.", "category": "QMS Documentation", "synonyms": ["device master record"]},
-    {"term": "DHR", "def": "Device History Record — record of production history for each unit of a finished device.", "category": "QMS Documentation", "synonyms": ["device history record"]},
-    {"term": "SOP", "def": "Standard Operating Procedure — documented process governing a recurring activity.", "category": "QMS Documentation", "synonyms": ["standard operating procedure"]},
-    {"term": "FRM", "def": "Form — controlled work form (e.g., FRM-07 supplier evaluation, FRM-08 job description).", "category": "QMS Documentation", "synonyms": ["work form", "controlled form"]},
-    {"term": "JD", "def": "Job Description — QMS-controlled document defining role responsibilities and qualifications.", "category": "QMS Documentation", "synonyms": ["job description"]},
-    {"term": "SE", "def": "Supplier Evaluation — QMS-controlled assessment of a supplier's capability and risk tier.", "category": "QMS Documentation", "synonyms": ["supplier evaluation", "vendor evaluation"]},
-    {"term": "NDA", "def": "Non-Disclosure Agreement.", "category": "QMS Documentation", "synonyms": ["non-disclosure agreement", "confidentiality agreement"]},
-    {"term": "DPA", "def": "Data Processing Agreement — required under GDPR when sharing personal data with processors.", "category": "QMS Documentation", "synonyms": ["data processing agreement"]},
-    {"term": "BAA", "def": "Business Associate Agreement — required under HIPAA when sharing PHI with vendors.", "category": "QMS Documentation", "synonyms": ["business associate agreement", "HIPAA agreement"]},
-    {"term": "SOC 2", "def": "Service Organization Control 2 — security, availability, and confidentiality audit framework.", "category": "QMS Documentation", "synonyms": ["SOC2", "security audit"]},
-    {"term": "ISO 27001", "def": "International information security management system standard.", "category": "QMS Documentation", "synonyms": ["information security standard", "infosec standard"]},
-    {"term": "KOL", "def": "Key Opinion Leader — influential physician or researcher whose endorsement carries clinical weight.", "category": "Stakeholders & PR", "synonyms": ["key opinion leader", "thought leader"]},
-    {"term": "MAB", "def": "Medical Advisory Board — Nucs AI's MAB includes Drs. Calais (UCLA), Ceci (IEO Milan), Becker (Rutgers), and Nawaz (AstraZeneca).", "category": "Stakeholders & PR", "synonyms": ["medical advisory board", "advisory board"]},
-    {"term": "Embargo", "def": "An agreement restricting press coverage until a specified release time.", "category": "Stakeholders & PR", "synonyms": ["press embargo", "media embargo"]},
-    {"term": "Newsjacking", "def": "Tying brand commentary or content to breaking industry news to ride existing media attention.", "category": "Stakeholders & PR", "synonyms": ["news hijacking"]},
-    {"term": "Op-ed", "def": "Opinion editorial published under a named author, typically in a trade or general publication.", "category": "Stakeholders & PR", "synonyms": ["opinion editorial", "byline"]},
-    {"term": "Announceable", "def": "Hard news suitable for a press release. Nucs AI categories: Product, Partners, Data, Growth, Talent.", "category": "Stakeholders & PR", "synonyms": ["press release", "hard news"]},
-    {"term": "Shadow campaign", "def": "Marketing/PR activity timed to a conference's hype cycle without physically attending.", "category": "Stakeholders & PR", "synonyms": ["shadow PR", "non-attendance campaign"]},
-    {"term": "SNMMI", "def": "Society of Nuclear Medicine and Molecular Imaging — primary US nuclear medicine professional society.", "category": "Conferences", "synonyms": ["Society of Nuclear Medicine"]},
-    {"term": "EANM", "def": "European Association of Nuclear Medicine — primary European nuclear medicine society.", "category": "Conferences", "synonyms": ["European Association Nuclear Medicine"]},
-    {"term": "RSNA", "def": "Radiological Society of North America — largest annual radiology conference.", "category": "Conferences", "synonyms": ["Radiological Society North America"]},
-    {"term": "ASCO", "def": "American Society of Clinical Oncology — major oncology conference.", "category": "Conferences", "synonyms": ["American Society Clinical Oncology"]},
-    {"term": "ESMO", "def": "European Society for Medical Oncology — major European oncology conference.", "category": "Conferences", "synonyms": ["European Society Medical Oncology"]},
-    {"term": "EAU", "def": "European Association of Urology.", "category": "Conferences", "synonyms": ["European Association Urology"]},
-    {"term": "AUA", "def": "American Urological Association.", "category": "Conferences", "synonyms": ["American Urological Association"]},
-    {"term": "JNM", "def": "Journal of Nuclear Medicine — flagship journal of SNMMI.", "category": "Journals", "synonyms": ["Journal of Nuclear Medicine"]},
-    {"term": "EJNMMI", "def": "European Journal of Nuclear Medicine and Molecular Imaging — flagship EANM journal.", "category": "Journals", "synonyms": ["European Journal of Nuclear Medicine"]},
-    {"term": "CNM", "def": "Clinical Nuclear Medicine.", "category": "Journals", "synonyms": ["Clinical Nuclear Medicine"]},
-    {"term": "JCO", "def": "Journal of Clinical Oncology — flagship ASCO journal.", "category": "Journals", "synonyms": ["Journal of Clinical Oncology"]},
-    {"term": "Eur Urol", "def": "European Urology — top-tier urology journal, EAU's flagship.", "category": "Journals", "synonyms": ["European Urology"]},
-    {"term": "Exini / aPROMISE", "def": "Lantheus subsidiary providing aPROMISE — auto-segmentation and PSMA reporting software.", "category": "Competitors / Industry", "synonyms": ["Exini", "aPROMISE", "Lantheus AI"]},
-    {"term": "Siemens Healthineers AI", "def": "Imaging AI portfolio that includes PSMA workflow tools.", "category": "Competitors / Industry", "synonyms": ["Siemens AI", "Healthineers"]},
-    {"term": "Novartis", "def": "Manufacturer of Pluvicto (Lu-177-PSMA-617) and Locametz — primary RLT pharma player in PSMA.", "category": "Competitors / Industry", "synonyms": ["Novartis Pluvicto"]},
-    {"term": "Lantheus", "def": "Manufacturer of Pylarify (18F-DCFPyL) and parent of Exini.", "category": "Competitors / Industry", "synonyms": ["Lantheus Pylarify"]},
-    {"term": "Blue Earth Diagnostics", "def": "Manufacturer of Posluma (18F-rhPSMA-7.3).", "category": "Competitors / Industry", "synonyms": ["Blue Earth", "Posluma manufacturer"]},
-    {"term": "AstraZeneca", "def": "Strategic partner in oncology pipeline development.", "category": "Competitors / Industry", "synonyms": ["AZ"]}
-  ]
+    {
+      "term": "Prostate cancer (PCa)",
+      "def": "Malignancy of the prostate gland; the most common non-skin cancer in men.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "prostate carcinoma",
+        "PCa",
+        "prostate tumor",
+        "prostate tumour"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Localized PCa",
+      "def": "Prostate cancer confined to the prostate, with no detectable spread.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "organ-confined",
+        "early stage prostate cancer"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Biochemical recurrence (BCR)",
+      "def": "Rising PSA after definitive therapy without imaging-detectable disease.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "BCR",
+        "PSA relapse",
+        "rising PSA"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "mHSPC",
+      "def": "Metastatic Hormone-Sensitive Prostate Cancer — disease that still responds to androgen deprivation.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "hormone sensitive",
+        "metastatic hormone sensitive prostate cancer"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "mCRPC",
+      "def": "Metastatic Castration-Resistant Prostate Cancer — progresses despite androgen deprivation therapy.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "castration resistant",
+        "metastatic castrate resistant",
+        "CRPC"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "TNM",
+      "def": "Tumor / Node / Metastasis — standard cancer staging system describing primary tumor, lymph node involvement, and distant metastases.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "staging",
+        "tumor node metastasis",
+        "cancer staging"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Oligometastatic",
+      "def": "Limited number of metastases (typically \u22643\u20135), often considered for targeted local therapy.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "limited metastases",
+        "few metastases"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PSA",
+      "def": "Prostate-Specific Antigen — blood biomarker used to screen, stage, and monitor prostate cancer activity.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "prostate specific antigen",
+        "blood test prostate"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PSMA",
+      "def": "Prostate-Specific Membrane Antigen — protein highly expressed on prostate cancer cells and the molecular target for PSMA imaging and theranostics.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "prostate specific membrane antigen",
+        "PSMA target"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "AR / AR-V7",
+      "def": "Androgen Receptor and its splice variant AR-V7; AR-V7 is associated with resistance to androgen receptor-targeted therapies.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "androgen receptor",
+        "AR-V7",
+        "resistance marker"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PET",
+      "def": "Positron Emission Tomography — functional/molecular imaging that detects gamma rays from positron-emitting radiotracers.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "positron emission tomography",
+        "molecular imaging",
+        "nuclear imaging"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "CT",
+      "def": "Computed Tomography — anatomical X-ray-based cross-sectional imaging.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "computed tomography",
+        "CAT scan"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "MRI",
+      "def": "Magnetic Resonance Imaging — soft tissue imaging using magnetic fields and radio waves.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "magnetic resonance imaging",
+        "MR scan"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SPECT",
+      "def": "Single Photon Emission Computed Tomography — nuclear imaging using gamma-emitting tracers.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "single photon emission"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PET/CT",
+      "def": "Hybrid scanner combining functional PET with anatomical CT — the standard modality for PSMA imaging.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "PET CT",
+        "hybrid imaging",
+        "PSMA PET",
+        "PSMA scan"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PET/MRI",
+      "def": "Hybrid scanner combining PET with MRI — used in select centers for higher soft-tissue contrast.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "PET MRI",
+        "PET MR"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "WB-PET",
+      "def": "Whole-Body PET — imaging from skull base to mid-thigh (or eyes-to-thighs) for systemic disease assessment.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "whole body PET",
+        "total body PET"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SUV",
+      "def": "Standardized Uptake Value — normalized measure of radiotracer uptake corrected for injected dose and patient weight.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "standardized uptake value",
+        "uptake measurement"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SUVmax",
+      "def": "Maximum SUV in a lesion (single hottest voxel) — most commonly reported quantitative metric.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "max SUV",
+        "maximum standardized uptake"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SUVmean",
+      "def": "Mean SUV across a defined region of interest.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "mean SUV",
+        "average uptake"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SUVpeak",
+      "def": "Mean SUV in a small fixed-size sphere (typically 1 cm\u00b3) around the hottest voxel — less noise-sensitive than SUVmax.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "peak SUV"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "MTV",
+      "def": "Metabolic Tumor Volume — total volume of metabolically active tumor.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "metabolic tumor volume",
+        "tumor volume"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "TLG",
+      "def": "Total Lesion Glycolysis (FDG) or Total Lesion Uptake (PSMA analog) — MTV multiplied by SUVmean.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "total lesion glycolysis",
+        "total lesion uptake",
+        "TLU"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Whole-body tumor burden",
+      "def": "Aggregate volumetric or uptake measure summed across all detected lesions.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "tumor burden",
+        "disease burden",
+        "total tumor load"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "68Ga-PSMA-11",
+      "def": "Gallium-68 labeled PSMA tracer for PET imaging. Brand names include Locametz (Novartis) and Illuccix (Telix).",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "gallium PSMA",
+        "Ga-68 PSMA",
+        "Locametz",
+        "Illuccix"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "18F-DCFPyL / Piflufolastat",
+      "def": "Pylarify (Lantheus) — FDA-approved fluorine-18 PSMA tracer with longer half-life than Ga-68 variants.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "Pylarify",
+        "piflufolastat",
+        "F-18 PSMA",
+        "DCFPyL"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "18F-PSMA-1007",
+      "def": "Fluorine-18 PSMA tracer with delayed renal clearance, useful for pelvic imaging.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "PSMA-1007",
+        "F-18 PSMA 1007"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "18F-rhPSMA-7.3",
+      "def": "Posluma (Blue Earth Diagnostics) — FDA-approved fluorine-18 PSMA tracer.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "Posluma",
+        "rhPSMA"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "18F-FDG",
+      "def": "Fluorodeoxyglucose — general oncology PET tracer measuring glucose metabolism (not PSMA-specific).",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "FDG",
+        "fluorodeoxyglucose",
+        "F-18 FDG"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Theranostics",
+      "def": "Therapy + diagnostics paired pathway: an imaging tracer identifies a molecular target, and a matched therapeutic delivers radiation to that same target.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "theragnostic",
+        "targeted radionuclide therapy",
+        "see-and-treat"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "RLT",
+      "def": "Radioligand Therapy — systemic targeted radiation delivered via a ligand that binds to tumor antigens.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "radioligand therapy",
+        "radionuclide therapy"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "RPT",
+      "def": "Radiopharmaceutical Therapy — broader umbrella term often used interchangeably with RLT.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "radiopharmaceutical therapy"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "177Lu-PSMA-617",
+      "def": "Pluvicto (Novartis) — FDA-approved Lutetium-177 PSMA radioligand therapy for mCRPC.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "Pluvicto",
+        "Lu-177 PSMA",
+        "lutetium PSMA",
+        "PSMA-617"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "225Ac-PSMA",
+      "def": "Actinium-225 PSMA — alpha-emitting radioligand therapy, currently investigational.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "actinium PSMA",
+        "Ac-225",
+        "alpha therapy"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Beta emitter",
+      "def": "Radionuclide emitting beta particles (e.g., Lu-177) — longer tissue range, lower linear energy transfer (LET).",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "beta particle",
+        "beta radiation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Alpha emitter",
+      "def": "Radionuclide emitting alpha particles (e.g., Ac-225) — short range, very high LET, more cytotoxic per decay.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "alpha particle",
+        "alpha radiation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "RECIST 1.1",
+      "def": "Response Evaluation Criteria In Solid Tumors — anatomical (CT/MRI) response framework based on lesion size changes.",
+      "category": "Response Assessment",
+      "synonyms": [
+        "RECIST",
+        "response criteria",
+        "tumor response"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PERCIST",
+      "def": "PET Response Criteria In Solid Tumors — quantitative PET-based response framework using SUL changes.",
+      "category": "Response Assessment",
+      "synonyms": [
+        "PET response",
+        "metabolic response criteria"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PCWG3 / PCWG4",
+      "def": "Prostate Cancer Working Group response criteria; PCWG4 is the latest update incorporating PSMA imaging.",
+      "category": "Response Assessment",
+      "synonyms": [
+        "PCWG",
+        "prostate cancer working group"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "RECIP 1.0",
+      "def": "Response Evaluation Criteria In PSMA-PET/CT — emerging PSMA-specific response framework.",
+      "category": "Response Assessment",
+      "synonyms": [
+        "RECIP",
+        "PSMA response criteria"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Lesion-by-lesion tracking",
+      "def": "Following individual lesions across imaging timepoints to characterize response heterogeneity (TrackPSMA's approach).",
+      "category": "Response Assessment",
+      "synonyms": [
+        "lesion tracking",
+        "longitudinal lesion",
+        "per-lesion response"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Inter-reader variability",
+      "def": "Differences in interpretation between different readers (Nucs AI's preferred term over 'subjectivity').",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "interobserver variability",
+        "reader disagreement"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Intra-reader variability",
+      "def": "The same reader's interpretation differing across separate reads of the same case.",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "intraobserver variability"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Noise / false positives",
+      "def": "Preferred terms for non-tumor uptake on PSMA imaging (avoid 'benign uptake').",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "false positive",
+        "background uptake",
+        "non-specific uptake"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Segmentation",
+      "def": "Delineating tumor or organ boundaries on imaging — manual or automated.",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "contouring",
+        "delineation",
+        "ROI definition"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Auto-segmentation",
+      "def": "AI-automated segmentation of tumors or organs.",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "automatic segmentation",
+        "AI segmentation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Reporting time",
+      "def": "Time required for a clinician to complete an imaging report — a key efficiency metric.",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "read time",
+        "interpretation time"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Whole-body quantification",
+      "def": "Quantitative tumor burden measurement summed across the entire scan.",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "whole body measurement",
+        "total body quantification"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "DeepPSMA",
+      "def": "Nucs AI's tumor detection, TNM staging, and whole-body tumor burden quantification on PSMA PET/CT. Reported metrics: 95% tumor detection, 87% TNM staging, 99% whole-body quantification, 70% reduction in reporting time.",
+      "category": "Nucs AI Products",
+      "synonyms": [
+        "deep PSMA",
+        "Nucs AI detection"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SelectPSMA",
+      "def": "Nucs AI's pre-therapy responder/non-responder identification for PSMA RLT. 94% NPV; multi-center validated in US/EU.",
+      "category": "Nucs AI Products",
+      "synonyms": [
+        "select PSMA",
+        "responder prediction",
+        "RLT selection"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "TrackPSMA",
+      "def": "Nucs AI's standardized response assessment with lesion-by-lesion tracking across imaging timepoints.",
+      "category": "Nucs AI Products",
+      "synonyms": [
+        "track PSMA",
+        "response tracking",
+        "Nucs AI tracking"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "VISION",
+      "def": "Phase III trial that established efficacy of Lu-177-PSMA-617 in mCRPC and led to Pluvicto's FDA approval.",
+      "category": "Clinical Trials",
+      "synonyms": [
+        "VISION trial",
+        "Pluvicto trial"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "TheraP",
+      "def": "Australian randomized trial comparing Lu-177-PSMA-617 vs cabazitaxel in mCRPC.",
+      "category": "Clinical Trials",
+      "synonyms": [
+        "TheraP trial",
+        "Lu-PSMA vs cabazitaxel"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PSMAfore",
+      "def": "Trial of Lu-177-PSMA-617 in pre-chemotherapy mCRPC.",
+      "category": "Clinical Trials",
+      "synonyms": [
+        "PSMAfore trial",
+        "pre-chemo PSMA"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "proPSMA",
+      "def": "Australian trial that established PSMA PET/CT superiority over conventional imaging for primary staging.",
+      "category": "Clinical Trials",
+      "synonyms": [
+        "proPSMA trial",
+        "PSMA staging"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PRIMARY / PRIMARY2",
+      "def": "Trials evaluating PSMA PET/CT in primary diagnosis and risk stratification of prostate cancer.",
+      "category": "Clinical Trials",
+      "synonyms": [
+        "PRIMARY trial",
+        "PRIMARY2"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PROSPET-BX",
+      "def": "Study referenced internally regarding PSMA PET use around biopsy decisions.",
+      "category": "Clinical Trials",
+      "synonyms": [
+        "PROSPET",
+        "biopsy PSMA"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SaMD",
+      "def": "Software as a Medical Device — software that performs medical functions without being part of a hardware device.",
+      "category": "Regulatory",
+      "synonyms": [
+        "software medical device"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "FDA 510(k)",
+      "def": "FDA premarket notification pathway demonstrating substantial equivalence to a legally marketed predicate device.",
+      "category": "Regulatory",
+      "synonyms": [
+        "510k",
+        "510(k)",
+        "premarket notification",
+        "FDA clearance",
+        "FDA approval"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "De Novo",
+      "def": "FDA pathway for novel low-to-moderate-risk devices that lack a predicate.",
+      "category": "Regulatory",
+      "synonyms": [
+        "de novo classification",
+        "FDA de novo"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PMA",
+      "def": "Premarket Approval — most rigorous FDA pathway, required for Class III devices.",
+      "category": "Regulatory",
+      "synonyms": [
+        "premarket approval",
+        "Class III approval"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "IDE",
+      "def": "Investigational Device Exemption — FDA mechanism allowing clinical study of an unapproved device.",
+      "category": "Regulatory",
+      "synonyms": [
+        "investigational device",
+        "FDA IDE"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "HDE",
+      "def": "Humanitarian Device Exemption — FDA pathway for devices treating rare conditions.",
+      "category": "Regulatory",
+      "synonyms": [
+        "humanitarian device"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "21 CFR 820",
+      "def": "FDA Quality System Regulation (QSR) governing medical device manufacturers.",
+      "category": "Regulatory",
+      "synonyms": [
+        "QSR",
+        "21 CFR Part 820",
+        "quality system regulation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "QMSR",
+      "def": "Quality Management System Regulation — FDA's update aligning 21 CFR 820 with ISO 13485 (effective 2026).",
+      "category": "Regulatory",
+      "synonyms": [
+        "quality management system regulation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "ISO 13485",
+      "def": "International quality management system standard for medical device organizations.",
+      "category": "Regulatory",
+      "synonyms": [
+        "medical device QMS standard"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "EU MDR 2017/745",
+      "def": "European Medical Device Regulation governing medical devices placed on the EU market.",
+      "category": "Regulatory",
+      "synonyms": [
+        "MDR",
+        "EU MDR",
+        "European medical device regulation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "IVDR",
+      "def": "EU In Vitro Diagnostic Regulation (2017/746) — counterpart to MDR for IVDs.",
+      "category": "Regulatory",
+      "synonyms": [
+        "in vitro diagnostic regulation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "HIPAA",
+      "def": "Health Insurance Portability and Accountability Act — US patient health data privacy law.",
+      "category": "Regulatory",
+      "synonyms": [
+        "health privacy",
+        "patient data privacy US"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "GDPR",
+      "def": "General Data Protection Regulation — EU data protection and privacy law.",
+      "category": "Regulatory",
+      "synonyms": [
+        "data protection EU",
+        "general data protection"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "IRB",
+      "def": "Institutional Review Board — ethics committee overseeing human subjects research.",
+      "category": "Regulatory",
+      "synonyms": [
+        "ethics board",
+        "ethics committee"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "eQMS",
+      "def": "Electronic Quality Management System (Nucs AI uses Greenlight Guru).",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "electronic QMS",
+        "Greenlight Guru"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "DHF",
+      "def": "Design History File — compilation of records describing the design history of a finished device.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "design history file"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "DMR",
+      "def": "Device Master Record — documentation defining the procedures and specifications for a finished device.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "device master record"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "DHR",
+      "def": "Device History Record — record of production history for each unit of a finished device.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "device history record"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SOP",
+      "def": "Standard Operating Procedure — documented process governing a recurring activity.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "standard operating procedure"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "FRM",
+      "def": "Form — controlled work form (e.g., FRM-07 supplier evaluation, FRM-08 job description).",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "work form",
+        "controlled form"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "JD",
+      "def": "Job Description — QMS-controlled document defining role responsibilities and qualifications.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "job description"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SE",
+      "def": "Supplier Evaluation — QMS-controlled assessment of a supplier's capability and risk tier.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "supplier evaluation",
+        "vendor evaluation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "NDA",
+      "def": "Non-Disclosure Agreement.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "non-disclosure agreement",
+        "confidentiality agreement"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "DPA",
+      "def": "Data Processing Agreement — required under GDPR when sharing personal data with processors.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "data processing agreement"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "BAA",
+      "def": "Business Associate Agreement — required under HIPAA when sharing PHI with vendors.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "business associate agreement",
+        "HIPAA agreement"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SOC 2",
+      "def": "Service Organization Control 2 — security, availability, and confidentiality audit framework.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "SOC2",
+        "security audit"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "ISO 27001",
+      "def": "International information security management system standard.",
+      "category": "QMS Documentation",
+      "synonyms": [
+        "information security standard",
+        "infosec standard"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "KOL",
+      "def": "Key Opinion Leader — influential physician or researcher whose endorsement carries clinical weight.",
+      "category": "Stakeholders & PR",
+      "synonyms": [
+        "key opinion leader",
+        "thought leader"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "MAB",
+      "def": "Medical Advisory Board — Nucs AI's MAB includes Drs. Calais (UCLA), Ceci (IEO Milan), Becker (Rutgers), and Nawaz (AstraZeneca).",
+      "category": "Stakeholders & PR",
+      "synonyms": [
+        "medical advisory board",
+        "advisory board"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Embargo",
+      "def": "An agreement restricting press coverage until a specified release time.",
+      "category": "Stakeholders & PR",
+      "synonyms": [
+        "press embargo",
+        "media embargo"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Newsjacking",
+      "def": "Tying brand commentary or content to breaking industry news to ride existing media attention.",
+      "category": "Stakeholders & PR",
+      "synonyms": [
+        "news hijacking"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Op-ed",
+      "def": "Opinion editorial published under a named author, typically in a trade or general publication.",
+      "category": "Stakeholders & PR",
+      "synonyms": [
+        "opinion editorial",
+        "byline"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Announceable",
+      "def": "Hard news suitable for a press release. Nucs AI categories: Product, Partners, Data, Growth, Talent.",
+      "category": "Stakeholders & PR",
+      "synonyms": [
+        "press release",
+        "hard news"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Shadow campaign",
+      "def": "Marketing/PR activity timed to a conference's hype cycle without physically attending.",
+      "category": "Stakeholders & PR",
+      "synonyms": [
+        "shadow PR",
+        "non-attendance campaign"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SNMMI",
+      "def": "Society of Nuclear Medicine and Molecular Imaging — primary US nuclear medicine professional society.",
+      "category": "Conferences",
+      "synonyms": [
+        "Society of Nuclear Medicine"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "EANM",
+      "def": "European Association of Nuclear Medicine — primary European nuclear medicine society.",
+      "category": "Conferences",
+      "synonyms": [
+        "European Association Nuclear Medicine"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "RSNA",
+      "def": "Radiological Society of North America — largest annual radiology conference.",
+      "category": "Conferences",
+      "synonyms": [
+        "Radiological Society North America"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "ASCO",
+      "def": "American Society of Clinical Oncology — major oncology conference.",
+      "category": "Conferences",
+      "synonyms": [
+        "American Society Clinical Oncology"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "ESMO",
+      "def": "European Society for Medical Oncology — major European oncology conference.",
+      "category": "Conferences",
+      "synonyms": [
+        "European Society Medical Oncology"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "EAU",
+      "def": "European Association of Urology.",
+      "category": "Conferences",
+      "synonyms": [
+        "European Association Urology"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "AUA",
+      "def": "American Urological Association.",
+      "category": "Conferences",
+      "synonyms": [
+        "American Urological Association"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "JNM",
+      "def": "Journal of Nuclear Medicine — flagship journal of SNMMI.",
+      "category": "Journals",
+      "synonyms": [
+        "Journal of Nuclear Medicine"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "EJNMMI",
+      "def": "European Journal of Nuclear Medicine and Molecular Imaging — flagship EANM journal.",
+      "category": "Journals",
+      "synonyms": [
+        "European Journal of Nuclear Medicine"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "CNM",
+      "def": "Clinical Nuclear Medicine.",
+      "category": "Journals",
+      "synonyms": [
+        "Clinical Nuclear Medicine"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "JCO",
+      "def": "Journal of Clinical Oncology — flagship ASCO journal.",
+      "category": "Journals",
+      "synonyms": [
+        "Journal of Clinical Oncology"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Eur Urol",
+      "def": "European Urology — top-tier urology journal, EAU's flagship.",
+      "category": "Journals",
+      "synonyms": [
+        "European Urology"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Exini / aPROMISE",
+      "def": "Lantheus subsidiary providing aPROMISE — auto-segmentation and PSMA reporting software.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Exini",
+        "aPROMISE",
+        "Lantheus AI"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Siemens Healthineers AI",
+      "def": "Imaging AI portfolio that includes PSMA workflow tools.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Siemens AI",
+        "Healthineers"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Novartis",
+      "def": "Manufacturer of Pluvicto (Lu-177-PSMA-617) and Locametz — primary RLT pharma player in PSMA.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Novartis Pluvicto"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Lantheus",
+      "def": "Manufacturer of Pylarify (18F-DCFPyL) and parent of Exini.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Lantheus Pylarify"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Blue Earth Diagnostics",
+      "def": "Manufacturer of Posluma (18F-rhPSMA-7.3).",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Blue Earth",
+        "Posluma manufacturer"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "AstraZeneca",
+      "def": "Strategic partner in oncology pipeline development.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "AZ"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PACS",
+      "def": "Picture Archiving and Communication System \u2014 digital system for storing, retrieving, and distributing medical images. Nucs AI integrates with +90% of PACS systems supporting cloud connectivity.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "picture archiving and communication system",
+        "image archive",
+        "imaging system"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "EHR",
+      "def": "Electronic Health Record \u2014 digital patient record system used across healthcare institutions. Nucs AI's platform is designed for EHR integration alongside PACS.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "electronic health record",
+        "EMR",
+        "electronic medical record",
+        "patient record system"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "DICOM",
+      "def": "Digital Imaging and Communications in Medicine \u2014 the universal standard format for medical imaging data. All Nucs AI products process DICOM files.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "digital imaging and communications in medicine",
+        "DICOM format",
+        "DICOM standard"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "End-to-end deep learning",
+      "def": "A machine learning architecture where the model learns directly from raw input to final output without separate hand-engineered processing steps. Nucs AI uses an end-to-end approach \u2014 a key differentiator vs. competitors.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "end-to-end ML",
+        "E2E deep learning",
+        "end-to-end model"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "AI Assistant",
+      "def": "Nucs AI's text-based clinical companion that empowers physicians to analyze PSMA-PET/CT scans, generate reports, answer software FAQs, and streamline everyday tasks.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "clinical AI assistant",
+        "Nucs AI assistant",
+        "AI chatbot"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "ReportPSMA",
+      "def": "Nucs AI's upcoming structured reporting product for standardized PSMA-PET/CT clinical reports. Pending FDA 510(k) pre-submission.",
+      "category": "Nucs AI Products",
+      "synonyms": [
+        "report PSMA",
+        "Nucs AI reporting",
+        "structured reporting"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Cloud connectivity",
+      "def": "The ability to connect and transmit medical imaging data via cloud infrastructure, enabling remote AI analysis without on-premise hardware.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "cloud integration",
+        "cloud-based imaging",
+        "remote connectivity"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SaaS",
+      "def": "Software as a Service \u2014 subscription-based software delivery model. DeepPSMA offers SaaS and Pay Per Scan pricing.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "software as a service",
+        "subscription model",
+        "cloud software"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PSA50 response rate",
+      "def": "Proportion of patients achieving \u226550% PSA reduction from baseline during treatment \u2014 a standard marker of RLT treatment response. PSMA-R patients showed 51% vs 6% for PSMA-NR.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "PSA50",
+        "PSA50 response",
+        "50% PSA decline"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PSA-PFS",
+      "def": "PSA Progression-Free Survival \u2014 time from treatment start to first PSA progression event. Key secondary endpoint in PSMA RLT trials.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "PSA progression-free survival",
+        "PSA PFS"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Overall survival (OS)",
+      "def": "Time from treatment start to death from any cause \u2014 the gold-standard primary endpoint in oncology trials.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "OS",
+        "overall survival",
+        "survival endpoint"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Hazard ratio",
+      "def": "Statistical measure comparing the rate of an event (death, progression) between two groups. HR < 1 favors treatment. SelectPSMA non-responders: 4.56x HR for PSA progression, 2.1x for death.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "HR",
+        "hazard ratio",
+        "risk ratio"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "C-index",
+      "def": "Concordance index \u2014 measures a prognostic model's discrimination (0.5 = random, 1.0 = perfect). PSMA-VOL achieved 0.80 for OS in DeepPSMA validation.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "concordance index",
+        "c-statistic",
+        "discrimination index"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "NPV",
+      "def": "Negative Predictive Value \u2014 probability that a negative test correctly identifies a true negative. SelectPSMA: 94% NPV for non-responder identification.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "negative predictive value"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PPV",
+      "def": "Positive Predictive Value \u2014 probability that a positive test correctly identifies a true positive.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "positive predictive value"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Sensitivity",
+      "def": "Proportion of true positives correctly identified by a test. Measures ability to detect disease when present.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "true positive rate",
+        "recall",
+        "detection rate"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Specificity",
+      "def": "Proportion of true negatives correctly identified by a test. Measures ability to correctly rule out disease.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "true negative rate",
+        "selectivity"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Prognostic biomarker",
+      "def": "A measurable indicator that predicts disease outcome regardless of treatment. PSMA-VOL demonstrated strong prognostic value for overall survival.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "prognostic marker",
+        "outcome predictor"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Predictive biomarker",
+      "def": "A measurable indicator that predicts response to a specific treatment. SelectPSMA functions as a predictive biomarker for PSMA radioligand therapy.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "predictive marker",
+        "treatment response biomarker",
+        "companion biomarker"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PSMA-VOL",
+      "def": "PSMA-positive tumor volume \u2014 total volume of PSMA-avid tumor measured by DeepPSMA. C-index 0.80 as OS prognosticator.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "PSMA volume",
+        "PSMA tumor volume",
+        "PSMA-positive volume"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "PSMA-R / PSMA-NR",
+      "def": "SelectPSMA's binary classification: PSMA Responders (PSMA-R) vs Non-Responders (PSMA-NR) to PSMA RLT. PSMA-R: 51% PSA50 response vs 6% for PSMA-NR.",
+      "category": "Clinical Metrics & Endpoints",
+      "synonyms": [
+        "PSMA responder",
+        "PSMA non-responder",
+        "SelectPSMA classification"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Retrospective study",
+      "def": "A study that analyzes previously collected data. DeepPSMA's initial validation and SelectPSMA's Johns Hopkins study were retrospective.",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "retrospective analysis",
+        "historical data study"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Prospective study",
+      "def": "A study that enrolls patients and collects data going forward. SelectPSMA's multi-center US/EU validation (JCO 2025) was prospective.",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "prospective analysis",
+        "forward-looking study"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Multi-center study",
+      "def": "A study conducted across multiple clinical sites. Increases generalizability. DeepPSMA validated across 6 centers (EU + US).",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "multicenter",
+        "multi-site study",
+        "multi-institutional study"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Clinical validation",
+      "def": "Demonstrating that a medical device or software performs as intended in a clinical setting with real patient data.",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "clinical performance validation",
+        "real-world validation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Alpha site",
+      "def": "Nucs AI's early-access clinical partner program \u2014 hospitals that validate, shape, and co-develop products with early access, research visibility, and real-world impact.",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "early-access site",
+        "alpha partner",
+        "clinical partner site"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "CADe",
+      "def": "Computer-Aided Detection \u2014 FDA classification for AI that assists in detecting abnormalities. DeepPSMA's CADe 510(k) is planned after LLZ approval.",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "computer-aided detection",
+        "CAD detection"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "CADx",
+      "def": "Computer-Aided Diagnosis/Characterization \u2014 FDA classification for AI that assists in characterizing or classifying detected abnormalities.",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "computer-aided diagnosis",
+        "CAD characterization"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "LLZ",
+      "def": "Lesion-Level Analysis \u2014 FDA study type for standalone model performance validation. DeepPSMA's first 510(k) submission targets LLZ approval.",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "lesion-level analysis",
+        "lesion-level validation"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "MRMC",
+      "def": "Multi-Reader Multi-Case \u2014 FDA clinical performance study design where multiple readers interpret the same cases with and without AI assistance.",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "multi-reader multi-case",
+        "MRMC study",
+        "reader study"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Pre-submission meeting",
+      "def": "Formal meeting with FDA before a regulatory submission to discuss study design, intended use, and classification. Also called pre-sub.",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "pre-sub",
+        "FDA pre-submission",
+        "pre-sub meeting"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "TAM",
+      "def": "Total Addressable Market \u2014 the total revenue opportunity if 100% market share is captured. Medical imaging AI: $25B by 2033; prostate-specific: $3.5B.",
+      "category": "Business & Market",
+      "synonyms": [
+        "total addressable market",
+        "total market size"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SAM",
+      "def": "Serviceable Addressable Market \u2014 the segment of TAM reachable with current products and go-to-market. Nucs AI's SAM: ~$2.5B (US, EU-5, select APAC).",
+      "category": "Business & Market",
+      "synonyms": [
+        "serviceable addressable market",
+        "serviceable market"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SOM",
+      "def": "Serviceable Obtainable Market \u2014 the realistic portion of SAM a company can capture. Nucs AI targeting $375M annual revenue by ~2033.",
+      "category": "Business & Market",
+      "synonyms": [
+        "serviceable obtainable market",
+        "obtainable market"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "CRO",
+      "def": "Contract Research Organization \u2014 company hired to conduct clinical trials on behalf of pharma/medtech. Market segment: $230M for Nucs AI.",
+      "category": "Business & Market",
+      "synonyms": [
+        "contract research organization",
+        "clinical research organization"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Payer",
+      "def": "Insurance company or government entity that reimburses healthcare costs. Nucs AI's payer segment: $250M, entering via health economics pilots.",
+      "category": "Business & Market",
+      "synonyms": [
+        "insurance payer",
+        "health plan",
+        "reimbursement entity"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "OEM",
+      "def": "Original Equipment Manufacturer \u2014 scanner and device manufacturers (GE, Siemens, Philips) who could embed Nucs AI's technology into their products.",
+      "category": "Business & Market",
+      "synonyms": [
+        "original equipment manufacturer",
+        "device manufacturer",
+        "scanner OEM"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Companion Diagnostic (CDx)",
+      "def": "An FDA-regulated diagnostic test or device linked to a specific therapy to identify patients most likely to benefit. SelectPSMA's CDx submission is planned for 2027.",
+      "category": "Regulatory",
+      "synonyms": [
+        "CDx",
+        "companion diagnostic",
+        "theranostic diagnostic"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "CPT code",
+      "def": "Current Procedural Terminology code \u2014 used for medical billing and reimbursement. Obtaining a CPT code for SelectPSMA is a key commercial milestone.",
+      "category": "Business & Market",
+      "synonyms": [
+        "current procedural terminology",
+        "billing code",
+        "reimbursement code"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Proof of Concept (PoC)",
+      "def": "An early-stage demonstration that a technology works as intended. AstraZeneca completed a successful PoC with Nucs AI.",
+      "category": "Business & Market",
+      "synonyms": [
+        "PoC",
+        "proof of concept",
+        "feasibility study"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "IPO",
+      "def": "Initial Public Offering \u2014 when a private company first offers shares on a public stock exchange. A potential exit pathway for Nucs AI.",
+      "category": "Business & Market",
+      "synonyms": [
+        "initial public offering",
+        "public listing",
+        "going public"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Clinical phenotype",
+      "def": "The observable clinical characteristics of a patient \u2014 including symptoms, history, and functional status \u2014 that inform diagnosis and treatment context.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "clinical presentation",
+        "patient phenotype",
+        "clinical characteristics"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Androgen deprivation therapy (ADT)",
+      "def": "Hormonal treatment that suppresses androgen levels to slow prostate cancer growth. Foundational therapy before mCRPC progression.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "ADT",
+        "androgen deprivation",
+        "hormonal therapy",
+        "hormone therapy"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Chemotherapy (taxane-based)",
+      "def": "Systemic cancer treatment using taxane drugs (docetaxel, cabazitaxel). Standard treatment line for mCRPC alongside or before RLT.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "taxane chemotherapy",
+        "docetaxel",
+        "cabazitaxel",
+        "chemo"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Immunotherapy",
+      "def": "Cancer treatment that harnesses the immune system to target tumor cells. An expanding treatment modality in Nucs AI's vision beyond RLT.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "immune therapy",
+        "immuno-oncology",
+        "IO therapy"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Tb-149",
+      "def": "Terbium-149 \u2014 an emerging alpha-emitting radionuclide for targeted alpha therapy. Part of Nucs AI's expansion vision beyond Lu-177.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "terbium-149",
+        "Tb149"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Pb-212",
+      "def": "Lead-212 \u2014 an emerging beta/alpha-emitting radionuclide for targeted radiopharmaceutical therapy.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "lead-212",
+        "Pb212"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "STEAP2",
+      "def": "Six-Transmembrane Epithelial Antigen of Prostate 2 \u2014 a molecular target for next-generation PSMA-like imaging and therapy beyond PSMA itself.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "six-transmembrane epithelial antigen of prostate 2",
+        "STEAP2 target"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "ctDNA",
+      "def": "Circulating tumor DNA \u2014 tumor-derived DNA fragments in blood. A liquid biomarker that Nucs AI's vision integrates alongside imaging data.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "circulating tumor DNA",
+        "cell-free tumor DNA",
+        "liquid biopsy DNA"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "SSRT PET/CT",
+      "def": "Somatostatin Receptor-Targeted PET/CT \u2014 molecular imaging modality for neuroendocrine tumors using DOTATATE/DOTATOC tracers.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "somatostatin receptor PET",
+        "DOTATATE PET",
+        "NET imaging"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "HER2-PET",
+      "def": "HER2-targeted PET imaging \u2014 molecular imaging modality for HER2-expressing cancers (breast, gastric). Part of Nucs AI's future modality expansion.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "HER2 PET imaging",
+        "HER2-targeted imaging"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "mpMRI",
+      "def": "Multiparametric MRI \u2014 MRI protocol combining multiple sequences (T2, DWI, DCE) for prostate cancer detection and characterization. Part of Nucs AI's modality expansion to PET + SPECT + mpMRI.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "multiparametric MRI",
+        "multi-parametric MRI",
+        "prostate MRI"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Genomics",
+      "def": "Study of an organism's complete set of DNA. A complementary data layer in Nucs AI's multimodal precision medicine vision.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "genome analysis",
+        "genomic profiling",
+        "DNA analysis"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Proteomics",
+      "def": "Large-scale study of proteins expressed by cells or tissues. A future data layer in Nucs AI's multimodal platform.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "protein analysis",
+        "proteomic profiling"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Liquid biomarkers",
+      "def": "Biomarkers derived from blood or other body fluids (ctDNA, circulating tumor cells, protein markers). A scalable complementary layer to imaging in Nucs AI's vision.",
+      "category": "Biomarkers & Lab",
+      "synonyms": [
+        "blood biomarkers",
+        "liquid biopsy markers",
+        "circulating biomarkers"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "FAPI",
+      "def": "Fibroblast Activation Protein Inhibitor \u2014 an emerging PET tracer targeting tumor stroma across multiple cancer types. Broader applicability than PSMA.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "fibroblast activation protein inhibitor",
+        "FAPI PET",
+        "FAP tracer"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "miTNM staging",
+      "def": "Molecular Imaging TNM \u2014 a staging approach using molecular imaging (PSMA-PET/CT) data for TNM classification. DeepPSMA achieves 87% miTNM staging accuracy.",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "molecular imaging TNM",
+        "miTNM",
+        "PET-based staging"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "TRAQinform IQ",
+      "def": "Bayer/Lantheus product (formerly Siemens Healthineers AI) for PSMA-PET quantification \u2014 a Nucs AI competitor. Acquired by Bayer in 2024.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "TRAQinform",
+        "Bayer PSMA AI",
+        "Lantheus TRAQinform"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "MIM Encore",
+      "def": "MIM Software's nuclear medicine quantification and analysis platform \u2014 a Nucs AI competitor in general imaging workflow.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "MIM Software",
+        "MIM nuclear medicine"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Artera",
+      "def": "AI company providing tissue-based predictive analytics for prostate cancer using pathology images. SelectPSMA competitor in therapy prediction.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Artera AI",
+        "pathology AI prostate"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Oncotype DX",
+      "def": "Exact Sciences' Genomic Prostate Score \u2014 genomic test predicting prostate cancer aggressiveness post-surgery. Competes with SelectPSMA in therapy biomarker space.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Oncotype DX Prostate",
+        "Genomic Prostate Score",
+        "Exact Sciences"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Decipher",
+      "def": "Veracyte's genomic biopsy classifier for prostate cancer prognosis post-surgery. Competes in biomarker space.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Decipher Prostate",
+        "Veracyte genomic",
+        "Veracyte Decipher"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Fusion Pharmaceuticals",
+      "def": "Radiopharmaceutical company developing next-generation targeted alpha therapies. Potential future pharma partner.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Fusion Pharma",
+        "targeted alpha therapy company"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Telix Pharmaceuticals",
+      "def": "Radiopharmaceutical company (Illuccix/PSMA-11 manufacturer). Ongoing performance testing partnership with Nucs AI.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Telix",
+        "Illuccix manufacturer"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "GE HealthCare",
+      "def": "Major medical imaging OEM. Ongoing performance testing partnership with Nucs AI.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "GE Healthcare",
+        "GE Medical",
+        "General Electric HealthCare"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "RadMD",
+      "def": "Imaging management and reader services company. Partner in Nucs AI's ecosystem.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "RadMD imaging",
+        "reader services"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Bayer",
+      "def": "Pharma company with radiopharmaceutical portfolio (acquired TRAQinform IQ from Lantheus). Operates in same PSMA-RLT space.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Bayer Pharmaceuticals",
+        "Bayer Radiopharma"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Philips",
+      "def": "Major medical imaging OEM and health technology company. Potential strategic buyer or platform partner.",
+      "category": "Competitors / Industry",
+      "synonyms": [
+        "Philips Healthcare",
+        "Philips Medical",
+        "Royal Philips"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Cohort",
+      "def": "A defined group of patients in a clinical study sharing a common characteristic (e.g., Cohort A: initial staging, Cohort B: biochemical recurrence in DeepPSMA's FDA study).",
+      "category": "Study Design & Evidence",
+      "synonyms": [
+        "patient cohort",
+        "study group",
+        "study population"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    },
+    {
+      "term": "Lu-177-DOTATATE (Lutathera)",
+      "def": "Lutetium-177 labeled DOTATATE \u2014 FDA-approved RLT for somatostatin receptor-positive GEP-NETs. The other major approved theranostic alongside Pluvicto.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "Lutathera",
+        "Lu-177 DOTATATE",
+        "lutetium DOTATATE"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000090",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Ra-223 (Xofigo)",
+      "def": "Radium-223 dichloride \u2014 FDA-approved alpha-emitting radiopharmaceutical for bone-metastatic castration-resistant prostate cancer.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "Xofigo",
+        "radium-223",
+        "Ra-223 dichloride"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000097",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Radioactive iodine therapy",
+      "def": "Systemic therapy using I-131 for thyroid cancer and hyperthyroidism \u2014 one of the oldest and most established nuclear medicine therapies.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "RAI therapy",
+        "I-131 therapy",
+        "radioiodine"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000005",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Targeted alpha therapy (TAT)",
+      "def": "Radiopharmaceutical therapy using alpha-emitting radionuclides for highly localized, high-LET cell killing. The next frontier beyond beta-emitting RLT.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "TAT",
+        "alpha particle therapy",
+        "targeted alpha"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000009",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "PRRT",
+      "def": "Peptide Receptor Radionuclide Therapy \u2014 RLT targeting somatostatin receptors on neuroendocrine tumors, typically using Lu-177-DOTATATE.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "peptide receptor radionuclide therapy",
+        "PRRT therapy",
+        "neuroendocrine RLT"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000004",
+      "nuclexName": "DOTATATE radiopharmaceutical therapy",
+      "nuclexStatus": "Differs",
+      "notionUrl": ""
+    },
+    {
+      "term": "Radiation dosimetry",
+      "def": "The measurement and calculation of radiation dose absorbed by organs and tumors during radiopharmaceutical therapy.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "dosimetry",
+        "dose calculation",
+        "radiation dose measurement"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000014",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Ga-68 DOTATATE",
+      "def": "Gallium-68 labeled DOTATATE \u2014 PET tracer for imaging somatostatin receptor-positive neuroendocrine tumors.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "gallium-68 DOTATATE",
+        "Ga68 DOTATATE",
+        "NETSPOT"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000058",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Ga-68 DOTATOC",
+      "def": "Gallium-68 labeled DOTATOC \u2014 alternative somatostatin receptor PET tracer.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "gallium-68 DOTATOC",
+        "Ga68 DOTATOC"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000072",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "F-18 fluciclovine (Axumin)",
+      "def": "Fluorine-18 labeled amino acid analog PET tracer for prostate cancer recurrence detection. Being superseded by PSMA tracers.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "Axumin",
+        "fluciclovine",
+        "anti-FACBC"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000065",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "F-18 sodium fluoride (NaF)",
+      "def": "Fluorine-18 sodium fluoride \u2014 bone PET tracer for detecting skeletal metastases.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "NaF PET",
+        "sodium fluoride PET",
+        "bone PET tracer"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000069",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Tc-99m",
+      "def": "Technetium-99m \u2014 the most widely used radioisotope in nuclear medicine.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "technetium-99m",
+        "Tc99m",
+        "technetium"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000129",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Y-90",
+      "def": "Yttrium-90 \u2014 beta-emitting radioisotope used in radioembolization for liver tumors.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "yttrium-90",
+        "Y90",
+        "radioembolization isotope"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000128",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "I-131",
+      "def": "Iodine-131 \u2014 beta/gamma-emitting radioisotope used therapeutically and diagnostically.",
+      "category": "Diagnostic Radiotracers",
+      "synonyms": [
+        "iodine-131",
+        "I131",
+        "radioiodine"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000112",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Theranostic imaging",
+      "def": "Imaging performed specifically to plan, guide, or monitor radiopharmaceutical therapy.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "therapy planning imaging",
+        "theranostic scan"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000030",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Attenuation correction",
+      "def": "A correction applied to PET/SPECT images to account for photon absorption by body tissues.",
+      "category": "Reading & Workflow",
+      "synonyms": [
+        "AC",
+        "attenuation correction method",
+        "CT-based attenuation correction"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000377",
+      "nuclexName": "attenuation correction method",
+      "nuclexStatus": "Differs",
+      "notionUrl": ""
+    },
+    {
+      "term": "SUL (SUV lean body mass)",
+      "def": "Standardized Uptake Value normalized to lean body mass. Used in PERCIST criteria.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "SUL",
+        "SUV lean",
+        "lean body mass SUV"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000209",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Gamma camera",
+      "def": "The fundamental imaging device for SPECT and planar nuclear medicine.",
+      "category": "Imaging Modalities",
+      "synonyms": [
+        "scintillation camera",
+        "Anger camera",
+        "planar camera"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000224",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Spatial resolution",
+      "def": "A scanner's ability to distinguish two closely spaced objects \u2014 a key performance metric.",
+      "category": "Platform & Technology",
+      "synonyms": [
+        "image resolution",
+        "scanner resolution"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000281",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Quantitative accuracy",
+      "def": "The degree to which measured imaging values reflect true radiotracer concentrations.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "quantitative precision",
+        "measurement accuracy"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000283",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Deauville five-point scale",
+      "def": "Visual assessment scale for FDG-PET treatment response in lymphoma (1\u20135 rating).",
+      "category": "Response Assessment",
+      "synonyms": [
+        "Deauville score",
+        "Deauville criteria",
+        "5-point scale"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000199",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Absorbed dose",
+      "def": "The amount of radiation energy deposited per unit mass of tissue (measured in Gray).",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "radiation dose",
+        "dose in Gray",
+        "Gy"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000352",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Time activity curve (TAC)",
+      "def": "A plot of radiotracer concentration in a tissue or organ over time.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "TAC",
+        "time-activity curve",
+        "activity curve"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000190",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Residence time",
+      "def": "The cumulated radioactivity in a source organ divided by the administered activity.",
+      "category": "Quantitative Imaging Metrics",
+      "synonyms": [
+        "organ residence time",
+        "cumulated activity ratio"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000189",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Radiopharmaceutical biodistribution",
+      "def": "The pattern of how a radiopharmaceutical distributes through the body after injection.",
+      "category": "Therapy & Theranostics",
+      "synonyms": [
+        "biodistribution",
+        "tracer distribution",
+        "drug distribution"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "NID000373",
+      "nuclexName": "",
+      "nuclexStatus": "Aligned",
+      "notionUrl": ""
+    },
+    {
+      "term": "Neuroendocrine tumor (NET)",
+      "def": "A class of tumors arising from neuroendocrine cells, often expressing somatostatin receptors.",
+      "category": "Disease & Anatomy",
+      "synonyms": [
+        "NET",
+        "neuroendocrine neoplasm",
+        "carcinoid tumor"
+      ],
+      "internalNotes": "",
+      "links": [],
+      "products": [],
+      "relatedTerms": [],
+      "nuclexId": "",
+      "nuclexName": "",
+      "nuclexStatus": "",
+      "notionUrl": ""
+    }
+  ],
+  "superCategories": {
+    "Clinical": [
+      "Disease & Anatomy",
+      "Biomarkers & Lab",
+      "Clinical Metrics & Endpoints",
+      "Imaging Modalities",
+      "Quantitative Imaging Metrics",
+      "Diagnostic Radiotracers",
+      "Therapy & Theranostics",
+      "Response Assessment",
+      "Reading & Workflow"
+    ],
+    "Products & Platform": [
+      "Nucs AI Products",
+      "Platform & Technology"
+    ],
+    "Research & Regulatory": [
+      "Clinical Trials",
+      "Study Design & Evidence",
+      "Regulatory",
+      "QMS Documentation"
+    ],
+    "Industry & Business": [
+      "Competitors / Industry",
+      "Stakeholders & PR",
+      "Business & Market",
+      "Conferences",
+      "Journals"
+    ]
+  }
 }
